@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="">
+            <h:outputText value="#{bundle.ListPromotionTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListPromotionEmpty}" rendered="#{promotionController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{promotionController.items.rowCount > 0}">
+                    <h:outputText value="#{promotionController.pagination.pageFirstItem + 1}..#{promotionController.pagination.pageLastItem + 1}/#{promotionController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{promotionController.previous}" value="#{bundle.Previous} #{promotionController.pagination.pageSize}" rendered="#{promotionController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{promotionController.next}" value="#{bundle.Next} #{promotionController.pagination.pageSize}" rendered="#{promotionController.pagination.hasNextPage}"/>&nbsp;
+                    <b:dataTable value="#{promotionController.items}" var="item" border="0"  style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPromotionTitle_promoId}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.promoId}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPromotionTitle_startDate}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.startDate}">
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:outputText>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPromotionTitle_endDate}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.endDate}">
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:outputText>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPromotionTitle_productId}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.productId}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{promotionController.prepareView}" value="#{bundle.ListPromotionViewLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{promotionController.prepareEdit}" value="#{bundle.ListPromotionEditLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{promotionController.destroy}" value="#{bundle.ListPromotionDestroyLink}"/>
+                        </h:column>
+                    </b:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{promotionController.prepareCreate}" value="#{bundle.ListPromotionCreateLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ListPromotionIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

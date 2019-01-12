@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/user/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewCartitemTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewCartitemLabel_id}"/>
+                    <h:outputText value="#{cartitemController.selected.id}" title="#{bundle.ViewCartitemTitle_id}"/>
+                    <h:outputText value="#{bundle.ViewCartitemLabel_quantity}"/>
+                    <h:outputText value="#{cartitemController.selected.quantity}" title="#{bundle.ViewCartitemTitle_quantity}"/>
+                    <h:outputText value="#{bundle.ViewCartitemLabel_cartId}"/>
+                    <h:outputText value="#{cartitemController.selected.cartId}" title="#{bundle.ViewCartitemTitle_cartId}"/>
+                    <h:outputText value="#{bundle.ViewCartitemLabel_productId}"/>
+                    <h:outputText value="#{cartitemController.selected.productId}" title="#{bundle.ViewCartitemTitle_productId}"/>
+                </h:panelGrid>
+                <b:dataTable value="#{userController.cartitem}" var="item" border="0" style="border:solid 1px"> 
+                    <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCartitemTitle_id}"/>
+                            </f:facet>
+                        <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCartitemTitle_quantity}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.quantity}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCartitemTitle_cartId}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.cartId}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCartitemTitle_productId}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.productId}"/>
+                        </h:column>
+                     <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="model Name"/>
+                            </f:facet>
+                         <h:outputText value="#{item.productId.brand}  #{item.productId.modelName}"/>
+                        </h:column>
+                     <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Price"/>
+                            </f:facet>
+                         <h:outputText value="#{item.productId.price}"/>
+                        </h:column>
+                </b:dataTable>
+                <br />
+                <h:commandLink action="#{cartitemController.destroyAndView}" value="#{bundle.ViewCartitemDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewCartitemEditLink}"/>
+                <br />
+                <h:commandLink action="#{cartitemController.prepareCreate}" value="#{bundle.ViewCartitemCreateLink}" />
+                <br />
+                <h:commandLink action="#{cartitemController.prepareList}" value="#{bundle.ViewCartitemShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewCartitemIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

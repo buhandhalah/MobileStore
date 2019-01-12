@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <body>
+        <ui:composition>
+           
+            <h:panelGroup  rendered="#{not empty request.remoteUser}" >
+                <b:navbarLinks pull="right">
+                    <b:navLink value="Hello #{userController.selected.CName}!" outcome="#{userController.manageAccount()}"></b:navLink>
+                    <b:navLink value="Log off" outcome="#{userController.logout()}"></b:navLink>
+                </b:navbarLinks>
+            </h:panelGroup>
+            <h:panelGroup  rendered="#{empty request.remoteUser}" >
+                <b:navbarLinks pull="right">
+                <b:navLink value="Register" outcome="/public/customer/Create"></b:navLink>
+                    <b:navLink value="Log in" outcome="/login"></b:navLink>
+                </b:navbarLinks>
+            </h:panelGroup>
+            
+        </ui:composition>
+    </body>
+</html>

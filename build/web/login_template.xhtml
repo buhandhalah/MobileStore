@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    <h:head>
+        <title><ui:insert name="title">Default Title</ui:insert></title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, inital-scale=1" />
+        <meta http-equiv="X-UA-Conpatible" content="IE-edge" />
+        <h:outputStylesheet library="css" name="style.css"></h:outputStylesheet>
+        <h:outputStylesheet library="css" name="bootstrap.css"></h:outputStylesheet>
+    </h:head>
+
+
+    <h:body>
+        <ui:define name="header" >
+            <h:panelGroup class="navbar navbar-inverse navbar-fixed-top" style="#{userController.color};" layout="block">
+                <h:panelGroup class="container" layout="block" style="margin-top: 3px;">
+                    <h:panelGroup class="navbar-collapse collapse" layout="block">
+                        <ul class="nav navbar-nav">
+                            <h:panelGroup rendered="#{userController.user == null}">
+                                <li><b:navLink value="Home" outcome="/index"></b:navLink></li>
+                                <li><b:navLink value="About" outcome="/about"></b:navLink></li>
+                                <li><b:navLink value="Contact" outcome="/contact"></b:navLink></li>
+                                <li><b:navLink value="Product" outcome="/public/product/List"></b:navLink></li>
+                                <li><b:navLink value="Promotion" outcome="/public/promotion/List"></b:navLink></li>
+                                <li><b:navLink value="My Cart" outcome="/user/cart/View"></b:navLink></li>
+                                <li><b:navLink value="FAQ" outcome="/public/faq/List"></b:navLink></li>
+                            </h:panelGroup>
+
+                            <h:panelGroup rendered="#{userController.user == 'admin'}">
+                                <li><b:navLink value="Home" outcome="/index"></b:navLink></li>
+                                <li><b:navLink value="About" outcome="/about"></b:navLink></li>
+                                <li><b:navLink value="Contact" outcome="/contact"></b:navLink></li>
+                                <li><b:navLink value="Product" outcome="/admin/product/List"></b:navLink></li>
+                                <li><b:navLink value="Rating" outcome="/admin/rating/List"></b:navLink></li>
+                                <li><b:navLink value="FAQ" outcome="/admin/faq/List"></b:navLink></li>
+                                <li><b:navLink value="CartAdmin" outcome="/admin/CartAdmin"></b:navLink></li>
+                                <li><b:navLink value="Customer" outcome="/admin/customer/List"></b:navLink></li>
+                                <li class="dropdown" id="dropdown" onclick="changeClass()">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >Admin <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><b:navLink value="Admin Links" outcome="/admin/AdminLinks"></b:navLink></li>
+                                        <li><b:navLink value="Analyze Product Usage" outcome="/admin/ProductUsage"></b:navLink></li>
+                                        <li><b:navLink value="List Empty Carts" outcome="/admin/ListEmptyCarts"></b:navLink></li>
+                                        <li><b:navLink value="List Carts Status" outcome="/admin/ListAllCarts"></b:navLink></li>
+                                        <li><b:navLink value="View All Carts" outcome="/admin/CartAdmin"></b:navLink></li>
+                                        <li><b:navLink value="View All Customer" outcome="/admin/customer/List"></b:navLink></li>
+                                        <li><b:navLink value="Product Categories" outcome="/admin/category/List"></b:navLink></li>
+                                    </ul>
+                                </li>
+                            </h:panelGroup>
+
+                            <h:panelGroup rendered="#{userController.user != 'admin' and userController.user != null}">
+                                <li><b:navLink value="Home" outcome="/index"></b:navLink></li>
+                                <li><b:navLink value="About" outcome="/about"></b:navLink></li>
+                                <li><b:navLink value="Contact" outcome="/contact"></b:navLink></li>
+                                <li><b:navLink value="Product" outcome="/user/product/List"></b:navLink></li>
+                                <li><b:navLink value="My Cart" outcome="/user/cart/View"></b:navLink></li>
+                                <li><b:navLink value="FAQ" outcome="/user/faq/List"></b:navLink></li>
+                                
+                            </h:panelGroup>
+                        </ul>
+                        <ui:insert name="login" >
+                            <ui:include src="_LoginPartial.xhtml" />
+                        </ui:insert>
+                    </h:panelGroup>
+
+                </h:panelGroup>
+            </h:panelGroup>
+            <br />
+            <br />
+            <br />
+            <br />
+        </ui:define>
+        <h1>
+            <ui:insert name="title">Default Title</ui:insert>
+        </h1>
+        <p>
+            <ui:insert name="body">Default Body</ui:insert>
+        </p>
+    </h:body>
+</html>

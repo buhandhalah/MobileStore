@@ -1,0 +1,3355 @@
+.GB-M-SUBNAV .subnavContainer {
+    border-bottom: 1px solid #E5E5E5;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #FFF
+}
+
+.GB-M-SUBNAV .subnavContainerHeightDiv {
+    width: 100%;
+    overflow: hidden;
+    background-color: #F5F5F5
+}
+
+.GB-M-SUBNAV .subnavScroller {
+    white-space: nowrap;
+    overflow-x: scroll;
+    line-height: 0;
+    border-bottom: 1px solid #E5E5E5
+}
+
+.GB-M-SUBNAV .subnavLinks {
+    text-align: center;
+    color: #111;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    padding-top: 1.7rem!important
+}
+
+.GB-M-SUBNAV .subnavHeading {
+    text-align: center
+}
+
+.GB-M-SUBNAV .subnavLinkActive {
+    color: #C45500!important
+}
+
+.GB-M-SUBNAV .subnavLinkUnderline {
+    height: 1px;
+    background-color: #C45500;
+    width: 0
+}
+
+.GB-M-SUBNAV .pageRefresher {
+    top: 0;
+    left: 45%;
+    z-index: 1500;
+    position: fixed;
+    display: none
+}
+
+.GB-M-SUBNAV .gbSubnavPages {
+    float: left;
+    background: #f5f5f5;
+    border-right: 2px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -moz-backface-visibility: hidden
+}
+
+.GB-M-SUBNAV .gbSubnavPages::-webkit-scrollbar {
+    width: 2px;
+    display: block
+}
+
+.GB-M-SUBNAV .gbSubnavPages::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0)
+}
+
+.GB-M-SUBNAV .gbSubnavPages.pageScroll::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5)
+}
+
+.GB-M-SUBNAV .subnavScreenPage {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden
+}
+
+.GB-M-SUBNAV .subnavAllPages {
+    height: 100%
+}
+
+.GB-M-SUBNAV ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.GB-M-SUBNAV li {
+    display: inline-block;
+    text-align: center
+}
+
+.GB-M-SUBNAV a {
+    text-decoration: none;
+    font-family: arial, sans-serif
+}
+
+.GB-M-SUBNAV .subnav-space {
+    background-color: #F5F5F5;
+    -webkit-box-shadow: 0 2px 4px 0 #F5F5F5 inset;
+    box-shadow: 0 2px 4px 0 #F5F5F5 inset;
+    padding: .2rem .5rem!important
+}
+
+.GB-M-SUBNAV .widgetHeaderContent {
+    width: 100%;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5)
+}
+
+.GB-M-SUBNAV .enableAnimation {
+    -webkit-transition: all .1s steps(24);
+    -moz-transition: all .1s steps(24);
+    -o-transition: all .1s steps(24);
+    transition: all .1s steps(24)
+}
+
+#gb_subnav_change_hover .a-changeover-inner {
+    width: 21rem
+}
+
+.GB-M-COMMON {
+    zoom: 1;
+    overflow: hidden;
+    background-color: #FFF
+}
+
+.GB-M-COMMON img {
+    border: 0
+}
+
+.GB-M-COMMON a {
+    text-decoration: none
+}
+
+.GB-M-COMMON .padCenter {
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.GB-M-COMMON .faded {
+    opacity: .3;
+    filter: alpha(opacity=30);
+    zoom: 1;
+    position: relative
+}
+
+.GB-M-COMMON .hidden {
+    display: none
+}
+
+.GB-M-COMMON .widgetLoading {
+    text-align: center
+}
+
+.GB-M-COMMON .dealLoading {
+    text-align: center;
+    height: 300px
+}
+
+.GB-M-COMMON .dealView {
+    height: auto
+}
+
+.GB-M-COMMON .dealViewLast {
+    height: 270px
+}
+
+.GB-M-COMMON .touchAnchor {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.GB-M-COMMON .dealTitle {
+    display: block;
+    height: 40px
+}
+
+.GB-M-COMMON .dealButton {
+    max-height: 77px
+}
+
+.GB-M-COMMON .dotdButton {
+    max-width: 124px
+}
+
+.GB-M-COMMON .dealButtonContainer {
+    padding-top: 5px;
+    padding-bottom: 10px
+}
+
+.GB-M-COMMON .watchButtonContainer {
+    padding-top: 5px
+}
+
+.GB-M-COMMON .dealDivider {
+    height: 10px
+}
+
+.GB-M-COMMON .changeOver {
+    position: absolute
+}
+
+.GB-M-COMMON .changeOverParent {
+    position: relative
+}
+
+.GB-M-COMMON .wrapInSingleLine {
+    white-space: nowrap
+}
+
+.GB-M-COMMON .watchButtonClicked {
+    color: #fff!important;
+    background: #C45500!important;
+    border: 1px solid #C45500!important
+}
+
+.GB-M-COMMON .watchButton,
+.GB-M-COMMON .watchButton:active,
+.GB-M-COMMON .watchButton:focus {
+    background: #FFF;
+    border: 1px solid #767676;
+    outline: 0;
+    width: 92px!important;
+    height: 25px!important;
+    color: #555;
+    padding: 0;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px
+}
+
+.GB-M-COMMON .watchButton:disabled {
+    color: #DDD
+}
+
+.GB-M-COMMON .watchButton>span {
+    margin: auto;
+    display: block
+}
+
+.GB-M-COMMON .watchingDeal,
+.GB-M-COMMON .watchingDeal:active,
+.GB-M-COMMON .watchingDeal:focus {
+    background: #FFF;
+    border: 1px solid #C45500!important;
+    outline: 0;
+    color: #C45500
+}
+
+.modalImage {
+    padding-bottom: 10px
+}
+
+.GB-M-COMMON .badgeHolder {
+    font-size: 8px
+}
+
+.GB-M-COMMON .badge {
+    margin: 0!important;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.GB-M-COMMON .badge>.a-row>.a-column {
+    line-height: 1rem;
+    min-height: 1rem
+}
+
+.GB-M-COMMON .badgeSlideTag {
+    display: inline-block;
+    min-height: 1.1rem
+}
+
+.GB-M-COMMON .badgeTag {
+    margin-left: 3%
+}
+
+.GB-M-COMMON .badgeText {
+    text-align: left;
+    padding-left: .2rem;
+    font-size: 8px
+}
+
+.GB-M-COMMON .DOTD {
+    background-color: #DDD;
+    border: 1px solid #DDD
+}
+
+.GB-M-COMMON .primeDeal {
+    background-color: #fff!important;
+    border: 1px solid #DDD;
+    border-right: none;
+    padding: .05rem 0;
+    font-size: 7px
+}
+
+.GB-M-COMMON .Badge162 {
+    width: 81px
+}
+
+.GB-M-COMMON .Badge160 {
+    width: 80px
+}
+
+.GB-M-COMMON .Badge234 {
+    width: 117px
+}
+
+.GB-M-COMMON .overflowhidden {
+    overflow: hidden
+}
+
+.GB-M-COMMON .DOTDSlide {
+    border-top: 1.1rem solid #DDD;
+    border-right: .4rem solid #fff
+}
+
+.GB-M-COMMON .primeDOTDSlide {
+    border-top: 2.1rem solid #DDD;
+    border-right: .6rem solid #fff
+}
+
+.GB-M-COMMON .primeSlide {
+    border-left: 1px solid #DDD;
+    border-top: 1px solid #fff;
+    transform: rotate(10deg) scale(1);
+    -webkit-transform: rotate(10deg) scale(1);
+    -moz-transform: rotate(10deg) scale(1);
+    -o-transform: rotate(10deg) scale(1);
+    -ms-transform: rotate(10deg) scale(1);
+    height: 1.3rem;
+    position: relative;
+    left: -.5rem;
+    top: .1rem;
+    width: 1.5rem;
+    background-color: #fff;
+    margin-bottom: -.3rem
+}
+
+.GB-M-COMMON .dealAction {
+    float: right!important;
+    width: auto!important;
+    margin: 0!important
+}
+
+.GB-M-COMMON .alignHorizontalToPrevSibling {
+    pointer-events: none;
+    height: 1rem
+}
+
+.GB-M-COMMON .alignHorizontalToPrevSibling>* {
+    pointer-events: all;
+    height: 100%;
+    padding: 1rem 0
+}
+
+.GB-M-COMMON .alignVerticalToPrevSibling {
+    pointer-events: none
+}
+
+.GB-M-COMMON .alignVerticalToPrevSibling>* {
+    pointer-events: all;
+    width: 1rem;
+    padding-left: 2rem
+}
+
+.GB-M-COMMON .alignHorizontalToPrevSibling:only-child::before,
+.GB-M-COMMON .alignVerticalToPrevSibling:only-child::before {
+    margin-top: .5rem!important
+}
+
+.GB-M-COMMON .circle {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border: 1px solid #767676;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.GB-M-COMMON .horizontalLeft {
+    margin-left: 2px;
+    float: left
+}
+
+.GB-M-COMMON .verticalRight {
+    margin-bottom: 1px;
+    clear: both;
+    float: right
+}
+
+.GB-M-COMMON .sortOrderDropdown {
+    min-width: 150px!important
+}
+
+.GB-M-COMMON .bottomPopover-infobox {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: #000;
+    color: #FFF;
+    filter: alpha(opacity=60);
+    opacity: .6;
+    z-index: 999
+}
+
+.GB-M-COMMON .bottomPopover-infobox .bottomPopover-info-content {
+    padding: 20px;
+    padding-right: 40px
+}
+
+.GB-M-COMMON .bottomPopover-infobox .bottomPopover-close-button {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer
+}
+
+.GB-M-COMMON .bottomPopover-infobox .bottomPopover-close-button:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 2px
+}
+
+.GB-M-COMMON .bottomPopover-infobox .bottomPopover-close-button:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 2px
+}
+
+.GB-M-COMMON .bottomPopover-infobox .bottomPopover-close-button:after,
+.GB-M-COMMON .bottomPopover-infobox .bottomPopover-close-button:before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    top: 16px
+}
+
+.GB-M-COMMON .gbWidgetWireframeRow {
+    overflow: hidden
+}
+
+.GB-M-COMMON .gbFilterCountTextColor {
+    color: #e47911
+}
+
+.GB-M-COMMON .gbDownArrow {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-left: 1px;
+    opacity: .5
+}
+
+.enableIOSDivClick {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.GB-M-SUPPLE .dealViewLong {
+    height: auto
+}
+
+.GB-M-SUPPLE .dealContentLeft {
+    margin-top: 20px;
+    margin-right: 0!important
+}
+
+.GB-M-SUPPLE .dealTitleLarge {
+    display: block;
+    height: 50px
+}
+
+.GB-M-SUPPLE .suppleTitle {
+    display: inline
+}
+
+.GB-M-SUPPLE .dealImage {
+    height: 135px;
+    width: 135px
+}
+
+.GB-M-HERO .paginationRow {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.GB-M-HERO .widgetTitleLanding {
+    display: inline;
+    color: #333
+}
+
+.GB-M-HERO .widgetScroll {
+    position: relative;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+.GB-M-HERO .leftArrow {
+    height: 13px;
+    vertical-align: text-top;
+    margin-right: 5px
+}
+
+.GB-M-HERO .progbarWrapper {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    height: 4px;
+    background-color: #ccc;
+    font-size: 1px
+}
+
+.GB-M-HERO .progbar {
+    height: 4px;
+    position: absolute;
+    background-color: #000;
+    font-size: 1px
+}
+
+.GB-M-HERO .progbarMissed {
+    height: 4px;
+    position: absolute;
+    background-color: #999;
+    font-size: 1px
+}
+
+.GB-M-HERO .refineRows {
+    color: #333
+}
+
+.GB-M-HERO .redirectText {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -.9rem
+}
+
+.GB-M-HERO .refineState {
+    margin-right: 5%
+}
+
+.GB-M-HERO .heroTitle {
+    display: inline
+}
+
+.GB-M-HERO .dealTitle {
+    display: block;
+    height: 38px
+}
+
+.GB-M-HERO .ellipsify {
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.GB-M-HERO .noDealsMessage {
+    text-align: center
+}
+
+.GB-M-HERO .paginatedDealView {
+    height: auto!important
+}
+
+.GB-M-HERO .jpLandingPageTitle {
+    font-size: 1.5rem
+}
+
+.GB-M-HERO .jpRefineButtonTitle {
+    font-size: 1.2rem
+}
+
+.GB-M-HERO .prime {
+    height: 13px!important
+}
+
+.GB-M-HERO .dealImage {
+    height: 135px;
+    width: 135px
+}
+
+.GB-M-HERO .prime {
+    position: static!important;
+    left: 0!important;
+    top: 0!important;
+    margin-top: 0!important;
+    background-position: -20.5rem -24.6rem!important;
+    width: 4.7rem!important
+}
+
+.GB-M-HERO .reviewStars {
+    padding-top: 0
+}
+
+.GB-M-HERO .dealTitle.events {
+    margin-top: 5px
+}
+
+.GB-M-HERO .priceBlock.events {
+    margin-bottom: 4px
+}
+
+.GB-M-HERO .hiddenCss {
+    visibility: hidden
+}
+
+.GB-M-HERO #widgetFilters .filterSubText {
+    display: block
+}
+
+.GB-M-HERO #widgetFilters .filterLink {
+    padding-left: 1.7rem
+}
+
+.GB-M-HERO #widgetFilters .filterLink a {
+    color: #000
+}
+
+.GB-M-HERO #widgetFilters .clearLink {
+    display: none
+}
+
+.GB-M-HERO .eventsFilter .a-section-expander-container {
+    border-radius: 0!important
+}
+
+.GB-M-HERO .eventsFilter .a-section-expander-container .a-link-section-expander {
+    border-radius: 0!important;
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+.GB-M-HERO .eventsFilter .a-section-expander-inner {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0
+}
+
+.GB-M-HERO .eventsFilter .a-section-expander-inner .a-control-row {
+    margin-left: 1rem;
+    margin-bottom: 1rem!important
+}
+
+.GB-M-HERO .eventsFilter .a-section-expander-inner hr {
+    margin-bottom: 1rem!important
+}
+
+.GB-M-HERO #widgetLoading img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 135px;
+    width: 135px;
+    display: block
+}
+
+.GB-M-GRID-HERO #widgetContent {
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+.GB-M-GRID-HERO {
+    background-color: transparent
+}
+
+.GB-M-GRID-HERO .widgetHeader {
+    background-color: #fff;
+    padding: 14px;
+    color: rgba(85, 85, 85, 1)
+}
+
+.GB-M-GRID-HERO .progbarWrapper {
+    height: 4px;
+    background-color: #ccc
+}
+
+.GB-M-GRID-HERO .progbarMissed {
+    background-color: #999
+}
+
+.GB-M-GRID-HERO .dealTitle {
+    display: block;
+    height: 38px;
+    margin-top: .4rem!important;
+    margin-bottom: .9rem!important
+}
+
+.GB-M-GRID-HERO .dealsListPrice {
+    height: 15px;
+    line-height: 14px
+}
+
+.GB-M-GRID-HERO .deal-action-holder:only-child {
+    margin-top: 1.3rem
+}
+
+.GB-M-GRID-HERO .deal-action-holder .alignHorizontalToPrevSibling {
+    position: relative;
+    top: -20px;
+    right: 0
+}
+
+.GB-M-GRID-HERO .deal-action-holder .alignVerticalToPrevSibling {
+    position: relative;
+    top: -16px;
+    right: 0
+}
+
+.GB-M-GRID-HERO .upcomeDealAtn .alignHorizontalToPrevSibling {
+    margin-top: .6rem
+}
+
+.GB-M-GRID-HERO .upcomeDealAtn .alignVerticalToPrevSibling {
+    margin-top: 1rem
+}
+
+.GB-M-GRID-HERO .watchButtonContainer {
+    float: left;
+    width: auto
+}
+
+.GB-M-GRID-HERO .ellipsify {
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.GB-M-GRID-HERO .noDealsMessage {
+    border: none!important;
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 18%;
+    padding-right: 18%
+}
+
+.GB-M-GRID-HERO .prime {
+    height: 13px!important
+}
+
+.GB-M-GRID-HERO .dealImage {
+    height: 130px;
+    width: 130px;
+    margin: .9rem auto 0
+}
+
+.GB-M-GRID-HERO .alignCenter {
+    min-width: 130px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.GB-M-GRID-HERO .reviewStars {
+    padding-top: 0
+}
+
+.GB-M-GRID-HERO .headerContent {
+    width: 100%;
+    background-color: #FFF;
+    z-index: 1000;
+    overflow: hidden;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5)
+}
+
+.GB-M-GRID-HERO #widgetLoading img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block
+}
+
+.GB-M-GRID-HERO #stateTemplate>:first-child>div {
+    display: inline
+}
+
+.GB-M-GRID-HERO #widgetContent>:first-child {
+    border-top: 1px solid #E5E5E5
+}
+
+.GB-M-GRID-HERO .widgetContentRow {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0 2.5%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex
+}
+
+.GB-M-GRID-HERO .widgetContentRow>* {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.GB-M-GRID-HERO .dealViewElement:only-child {
+    padding-right: 0
+}
+
+.GB-M-GRID-HERO .noBorder,
+.GB-M-GRID-HERO .noBorder>.leftColumnDeal {
+    border: none!important
+}
+
+.GB-M-GRID-HERO .leftColumnDeal {
+    border-right: 1px solid #E5E5E5;
+    max-width: 50%;
+    margin: 0!important;
+    box-sizing: content-box;
+    padding-right: 2.5%
+}
+
+.GB-M-GRID-HERO .rightColumnDeal {
+    padding-left: 2.5%
+}
+
+.GB-M-GRID-HERO .footerElm {
+    width: 99%;
+    display: block;
+    padding-right: 2.5%
+}
+
+.GB-M-GRID-HERO .avlClaimTime span {
+    color: #008A00!important
+}
+
+.GB-M-GRID-HERO .upcomingTime span {
+    color: #111!important
+}
+
+.GB-M-GRID-HERO .upcomingTime span:last-child {
+    font-weight: 700
+}
+
+.gbFilterDiv {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.1rem;
+    padding-left: 5%;
+    float: left;
+    width: 48%
+}
+
+.gbSortDiv {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.1rem;
+    padding-right: 5%;
+    float: right;
+    width: 50%
+}
+
+#sortButton {
+    display: inline-block;
+    width: 100%
+}
+
+.gbSortText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 88%;
+    display: inline-block;
+    margin-right: .2rem
+}
+
+.gbDivider {
+    background-color: #fafafa;
+    height: 1px;
+    border: 0;
+    margin-bottom: 0;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem
+}
+
+.gbFilterContentTextSize {
+    font-size: 1.6rem!important
+}
+
+.gbFilterFooterTextSize {
+    font-size: 1.6rem!important
+}
+
+.gbFilterContentSubTextSize {
+    font-size: 1.45rem!important
+}
+
+.gbFilterContentTextSpacing {
+    word-spacing: 4px
+}
+
+.gbFilterLeftArrow {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-top: 3px;
+    opacity: .5
+}
+
+.activeItem {
+    border-left: .4rem solid #e47911!important;
+    padding-left: .6rem!important;
+    font-weight: 700
+}
+
+.gbFilterHeader {
+    padding: 1.5rem 1.3rem 1.5rem 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: initial
+}
+
+.gbFilterFooter {
+    padding: 1.4rem 1.3rem 1.4rem 1.3rem
+}
+
+.gbFilterContent {
+    padding: 1.4rem 1.3rem 1.4rem 1.3rem
+}
+
+.gbFilterContent:active {
+    background-color: #d8d8d8;
+    color: #C45500;
+    font-weight: 700
+}
+
+.gbMobileAd {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 1px;
+    background-color: #fff
+}
+
+.GB-M-LIST-HERO {
+    background: #f5f5f5
+}
+
+.GB-M-LIST-HERO .dealImage {
+    height: 95px;
+    width: 95px
+}
+
+.GB-M-LIST-HERO .badgeHolder {
+    max-width: 140px
+}
+
+.GB-M-LIST-HERO .dealTitle {
+    height: auto
+}
+
+.GB-M-LIST-HERO #stateTemplate>* {
+    margin-bottom: .4rem!important
+}
+
+.GB-M-LIST-HERO #stateTemplate>:first-child>span {
+    color: #008A00!important
+}
+
+.GB-M-LIST-HERO #shipSold {
+    clear: both;
+    overflow: hidden
+}
+
+.GB-M-LIST-HERO #shipSold>span {
+    display: block
+}
+
+.GB-M-LIST-HERO .dealButtonContainer {
+    padding: 0
+}
+
+.GB-M-LIST-HERO #claimTime {
+    display: inline-block;
+    width: auto;
+    float: right;
+    line-height: 1rem;
+    max-width: 50%
+}
+
+.GB-M-LIST-HERO #claimTime.peaTimer {
+    float: left;
+    max-width: 100%
+}
+
+.GB-M-LIST-HERO #claimTime span,
+.GB-M-LIST-HERO #ftrClaimTime span {
+    color: #555!important
+}
+
+.GB-M-LIST-HERO .progbarWrapper+div {
+    float: left;
+    width: 50%;
+    line-height: 1rem
+}
+
+.GB-M-LIST-HERO .action-holder {
+    margin: 0!important
+}
+
+.GB-M-LIST-HERO .action-holder .alignHorizontalToPrevSibling {
+    margin-top: .6rem
+}
+
+.GB-M-LIST-HERO .action-holder .alignVerticalToPrevSibling {
+    margin-top: 1rem
+}
+
+.GB-M-LIST-HERO .topSpace {
+    background-color: #F5F5F5;
+    border-top: 1px solid #DDD;
+    -webkit-box-shadow: 0 2px 4px 0 #DDD inset;
+    box-shadow: 0 2px 4px 0 #DDD inset;
+    height: .2rem
+}
+
+.GB-M-LIST-HERO .bottomSheetContents {
+    margin-top: .9rem
+}
+
+.GB-M-LIST-HERO .noDealsMessage {
+    padding: 8px
+}
+
+.GB-M-LIST-HERO .dealViewLong {
+    background: #FFF
+}
+
+.GB-M-LIST-HERO .centerPadding {
+    padding: 0 5%
+}
+
+.GB-M-LIST-HERO .priceBlock {
+    margin-bottom: .5rem!important;
+    margin-top: .4rem!important
+}
+
+.GB-M-LIST-HERO .reviewStars {
+    margin-bottom: .5rem!important
+}
+
+.GB-TAB-SUPPLE .padCenter {
+    margin-left: 30px;
+    margin-right: 30px
+}
+
+.GB-TAB-SUPPLE .dealsContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+.GB-TAB-SUPPLE .dealViewLong {
+    height: 135px
+}
+
+.GB-TAB-SUPPLE .dealContentLeft {
+    margin-left: 21px;
+    margin-right: 21px
+}
+
+.GB-TAB-SUPPLE .dealTitle {
+    display: block;
+    height: 45px;
+    margin-right: 21px
+}
+
+.GB-TAB-SUPPLE .dealView {
+    margin-right: 21px;
+    height: auto!important
+}
+
+.GB-TAB-SUPPLE .dealTitleLarge {
+    display: block;
+    height: 50px
+}
+
+.GB-TAB-SUPPLE .withSeparator {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/v-border._V359539807_.png) no-repeat;
+    padding-left: 21px
+}
+
+.GB-TAB-SUPPLE .dealImage {
+    max-width: 185px;
+    min-width: 154px;
+    max-height: 185px;
+    min-height: 154px
+}
+
+.GB-TAB-SUPPLE .shortDesc {
+    display: block;
+    height: 45px;
+    margin-right: 21px
+}
+
+.GB-TAB-SUPPLE .restDesc {
+    margin-right: 21px
+}
+
+.GB-TAB-SUPPLE .dealDesc {
+    margin-right: 21px
+}
+
+.GB-TAB-SUPPLE .tabSuppleHeading {
+    display: inline
+}
+
+.GB-TAB-HERO .padCenter {
+    margin-left: 30px;
+    margin-right: 30px
+}
+
+.GB-TAB-HERO .dealsOuterContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+.GB-TAB-HERO .dealView {
+    float: left;
+    height: auto!important;
+    width: 153px;
+    margin-right: 16px;
+    overflow: hidden
+}
+
+.GB-TAB-HERO .tabHeroTitle {
+    display: inline;
+    color: #333
+}
+
+.GB-TAB-HERO .redirectTitle {
+    float: right;
+    vertical-align: middle
+}
+
+.GB-TAB-HERO .rightArrow {
+    height: 19px;
+    display: block;
+    margin-left: 5px
+}
+
+.GB-TAB-HERO .redirectTitleText {
+    text-align: right;
+    font-size: 1.8rem;
+    line-height: 1.25
+}
+
+.GB-TAB-HERO .redirectDiv {
+    margin-left: 44px;
+    margin-right: 30px;
+    padding-top: 110px;
+    float: left
+}
+
+.GB-TAB-HERO .progbarWrapper {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    height: 4px;
+    background-color: #ccc;
+    font-size: 1px
+}
+
+.GB-TAB-HERO .progbar {
+    height: 4px;
+    position: absolute;
+    background-color: #000;
+    font-size: 1px
+}
+
+.GB-TAB-HERO .progbarMissed {
+    height: 4px;
+    position: absolute;
+    background-color: #999;
+    font-size: 1px
+}
+
+.GB-TAB-HERO .dealImage {
+    height: 153px;
+    width: 153px
+}
+
+.GB-TAB-HERO .ellipsify {
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.GB-TAB-HERO .hiddenCss {
+    visibility: hidden
+}
+
+.GB-TAB-GRID-HERO .widgetTitleLanding {
+    display: inline;
+    color: #333
+}
+
+.GB-TAB-GRID-HERO .widgetScroll {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+.GB-TAB-GRID-HERO .leftArrow {
+    height: 13px;
+    vertical-align: text-top;
+    margin-right: 5px
+}
+
+.GB-TAB-GRID-HERO .progbarWrapper {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    height: 4px;
+    background-color: #ccc;
+    font-size: 1px
+}
+
+.GB-TAB-GRID-HERO .progbar {
+    height: 4px;
+    position: absolute;
+    background-color: #000;
+    font-size: 1px
+}
+
+.GB-TAB-GRID-HERO .progbarMissed {
+    height: 4px;
+    position: absolute;
+    background-color: #999;
+    font-size: 1px
+}
+
+.GB-TAB-GRID-HERO .refineRows {
+    color: #333
+}
+
+.GB-TAB-GRID-HERO .redirectText {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -.9rem
+}
+
+.GB-TAB-GRID-HERO .refineState {
+    margin-right: 5%
+}
+
+.GB-TAB-GRID-HERO .heroTitle {
+    display: inline;
+    padding-left: 20px
+}
+
+.GB-TAB-GRID-HERO .dealView {
+    height: auto!important
+}
+
+.GB-TAB-GRID-HERO .priceBlock {
+    display: block;
+    height: 20px
+}
+
+.GB-TAB-GRID-HERO .hiddenCss {
+    visibility: hidden
+}
+
+.GB-TAB-GRID-HERO .dealImage {
+    height: 153px;
+    width: 153px
+}
+
+.GB-TAB-GRID-HERO .ellipsify {
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.filterContent {
+    max-height: 506px;
+    width: 200px
+}
+
+.refineHeading {
+    background-color: #333
+}
+
+.GB-TAB-GRID-HERO .filterAnchor {
+    text-align: right
+}
+
+.GB-TAB-GRID-HERO .filterText {
+    display: inline
+}
+
+.GB-TAB-GRID-HERO #widgetLoading img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 135px;
+    width: 135px;
+    display: block
+}
+
+.GB-TAB-GRID-HERO .prime {
+    height: 16px!important;
+    vertical-align: middle
+}
+
+.GB-TAB-GRID-HERO .clearFilter {
+    display: none
+}
+
+.GB-TAB-GRID-HERO .noDealsMessage {
+    text-align: center
+}
+
+html {
+    height: 100%
+}
+
+body {
+    min-height: 100%
+}
+
+.a-popover-wrapper .filterContent.eventsFilter {
+    max-height: 506px;
+    width: 260px
+}
+
+.a-popover-wrapper #widgetFilters .clearLink {
+    display: none
+}
+
+.a-popover-wrapper #widgetFilters .filterSubText {
+    display: block
+}
+
+.a-popover-wrapper #widgetFilters .filterLink {
+    padding-left: 1.7rem
+}
+
+.a-popover-wrapper #widgetFilters .filterLink a {
+    color: #000
+}
+
+.a-popover-wrapper #filterContent .popover-clear-all {
+    position: absolute;
+    top: 23px;
+    right: 25px
+}
+
+.a-popover-wrapper #widgetFilters .a-section-expander-container {
+    border-radius: 0!important
+}
+
+.a-popover-wrapper #widgetFilters .a-section-expander-container .a-link-section-expander {
+    border-radius: 0!important;
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+.a-popover-wrapper #widgetFilters .a-section-expander-inner {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0
+}
+
+.a-popover-wrapper #widgetFilters .a-section-expander-inner .a-control-row {
+    margin-left: 1rem;
+    margin-bottom: 1rem!important
+}
+
+.a-popover-wrapper #widgetFilters .a-section-expander-inner hr {
+    margin-bottom: 1rem!important
+}
+
+.GB-M-COMMON.GB-GRID-HERO {
+    padding-bottom: 20px
+}
+
+.GB-M-COMMON.GB-GRID-HERO #widgetContent {
+    margin-bottom: 20px
+}
+
+.GB-M-COMMON.GB-GRID-HERO .dealTitle {
+    display: block;
+    height: 40px;
+    overflow: hidden
+}
+
+.GB-M-COMMON.GB-GRID-HERO .priceBlock .prime {
+    height: 13px
+}
+
+.GB-M-COMMON.GB-GRID-HERO .priceBlock {
+    display: block
+}
+
+.GB-M-COMMON.GB-GRID-HERO .reviewStars {
+    display: block;
+    height: 20px
+}
+
+.GB-M-COMMON.GB-GRID-HERO .touchAnchor {
+    height: auto
+}
+
+.GB-M-COMMON.GB-GRID-HERO .imageBlock {
+    display: block;
+    zoom: normal
+}
+
+.GB-M-COMMON.GB-GRID-HERO .touchAnchor .imageAlertBlock {
+    width: 145px;
+    position: absolute;
+    margin: -100px 0 0 0;
+    z-index: 1
+}
+
+.GB-M-COMMON.GB-GRID-HERO .touchAnchor .imageAlertBlock .inlineAlertBox {
+    width: 145px;
+    border: 1px #ddd solid;
+    background-color: #fff;
+    padding: 8px 5px 8px 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2)
+}
+
+.GB-M-COMMON.GB-GRID-HERO .summary {
+    color: #333
+}
+
+.GB-M-COMMON.GB-GRID-HERO .summary:hover {
+    color: #e47911
+}
+
+.GB-M-COMMON.GB-GRID-HERO .clearFilter {
+    vertical-align: middle
+}
+
+.GB-M-COMMON.GB-GRID-HERO .clearFilter:hover {
+    color: #e47911;
+    cursor: pointer
+}
+
+.GB-M-COMMON.GB-GRID-HERO .dealView {
+    height: 255px;
+    margin: 10px;
+    width: 175px
+}
+
+.GB-M-COMMON.GB-GRID-HERO .dealView .dealViewContentWrapper {
+    height: 240px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    width: 175px;
+    position: absolute
+}
+
+.GB-M-COMMON.GB-GRID-HERO .dealView:hover .dealViewContentWrapper {
+    z-index: 100;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px #ddd
+}
+
+.GB-M-COMMON.GB-GRID-HERO .noDealsMessage {
+    text-align: center;
+    margin: 100px 0 100px 0
+}
+
+.GB-M-COMMON.GB-GRID-HERO .noDealsMessage .noDealsTitle {
+    display: block;
+    margin-bottom: 7px
+}
+
+.GB-M-COMMON.GB-GRID-HERO .wishListBtn .a-button-text {
+    padding: 0
+}
+
+.GB-M-COMMON.GB-FILTER-HERO {
+    padding-left: 10px
+}
+
+.GB-M-COMMON.GB-FILTER-HERO #widgetFilters {
+    margin-top: 11px
+}
+
+.GB-M-COMMON.GB-FILTER-HERO .filterItem .filterItemTitle {
+    display: block;
+    margin-bottom: 7px
+}
+
+.GB-M-COMMON.GB-FILTER-HERO .filterItem .filterLink {
+    cursor: pointer;
+    color: #333!important
+}
+
+.GB-M-COMMON.GB-FILTER-HERO .filterItem .filterLink:hover {
+    color: #e47911!important
+}
+
+.GB-M-COMMON.GB-FILTER-HERO .filterItem .checkbox.checked {
+    font-weight: 700
+}
+
+.GB-M-COMMON.GB-FILTER-HERO .filterItem .checkbox:hover {
+    color: #e47911;
+    cursor: pointer
+}
+
+.GB-M-COMMON.GB-FILTER-HERO .filterItem .checkbox .prime {
+    height: 13px;
+    margin-right: 4px;
+    margin-left: -2px
+}
+
+.GB-M-COMMON.GB-FILTER-HERO .filterItem .clearLink {
+    margin-top: -5px;
+    margin-bottom: 5px!important;
+    display: block
+}
+
+.GB-M-COMMON.GB-PC-FACEOUT {
+    margin: 25px 0 10px 0;
+    border-bottom: 1px solid #ddd;
+    overflow: visible
+}
+
+.GB-M-COMMON.GB-PC-FACEOUT #widgetContent {
+    border-bottom: 1px solid #ddd
+}
+
+.GB-M-COMMON.GB-PC-FACEOUT #widgetFilters {
+    margin-bottom: -1px;
+    height: auto
+}
+
+.GB-M-COMMON.GB-PC-FACEOUT .filterLink {
+    height: auto;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-bottom: 0;
+    text-align: center;
+    padding-top: 10px
+}
+
+.GB-M-COMMON.GB-PC-FACEOUT .filterLink:hover {
+    border: 1px solid #ddd;
+    border-bottom: 0
+}
+
+.GB-M-COMMON.GB-PC-FACEOUT .filterLink.selected {
+    font-weight: 700;
+    height: auto;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 10px
+}
+
+.GB-M-COMMON.GB-PC-FACEOUT .filterLink .filterImage {
+    height: 75px;
+    display: block;
+    margin: auto
+}
+
+.GB-M-COMMON.GB-PC-FACEOUT .triangle {
+    height: 9px;
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/faceout-selected-bg.png) no-repeat bottom center
+}
+
+.GB-M-COMMON.GB-TAB-FACEOUT {
+    border-bottom: 1px solid #ddd;
+    overflow: visible
+}
+
+.GB-M-COMMON.GB-TAB-FACEOUT #widgetContent {
+    border-bottom: 1px solid #ddd
+}
+
+.GB-M-COMMON.GB-TAB-FACEOUT #widgetFilters {
+    margin-bottom: -1px;
+    height: auto
+}
+
+.GB-M-COMMON.GB-TAB-FACEOUT .filterLink {
+    height: auto;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-bottom: 0;
+    text-align: center;
+    padding-top: 10px
+}
+
+.GB-M-COMMON.GB-TAB-FACEOUT .filterLink:hover {
+    border: 1px solid #ddd;
+    border-bottom: 0
+}
+
+.GB-M-COMMON.GB-TAB-FACEOUT .filterLink.selected {
+    font-weight: 700;
+    height: auto;
+    border: 1px solid #ddd;
+    text-align: center
+}
+
+.GB-M-COMMON.GB-TAB-FACEOUT .triangle {
+    height: 9px;
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/faceout-selected-bg.png) no-repeat bottom center
+}
+
+.GB-M-COMMON.GB-SUPPLE {
+    overflow: visible
+}
+
+.GB-SUPPLE .padCenter {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    margin-bottom: 20px!important
+}
+
+.GB-SUPPLE .padCenterContainer {
+    position: relative
+}
+
+.GB-SUPPLE .dealsContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+.GB-SUPPLE .dealViewLong {
+    height: 135px;
+    min-width: 216px
+}
+
+.GB-SUPPLE .dealContentLeft {
+    margin-left: 21px;
+    margin-right: 21px
+}
+
+.GB-SUPPLE .dealTitleOneLine {
+    display: block;
+    height: 20px
+}
+
+.GB-SUPPLE .dealTitleTwoLine {
+    display: block;
+    height: 40px
+}
+
+.GB-SUPPLE .dealTitleThreeLine {
+    display: block;
+    height: 60px
+}
+
+.GB-SUPPLE .doubleCellTitle {
+    display: block;
+    margin-right: 20px;
+    width: 450px
+}
+
+.GB-SUPPLE .singleCellTitle {
+    display: block;
+    width: 210px
+}
+
+.GB-SUPPLE .shortCellView,
+.GB-SUPPLE .shortCellViewTablet {
+    height: 360px!important;
+    min-width: 246px;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #DDD;
+    float: left;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-top: 2px
+}
+
+.GB-SUPPLE .tallCellView {
+    height: 500px!important;
+    min-width: 246px;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #DDD;
+    float: left;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-top: 2px
+}
+
+.GB-SUPPLE .tallCellViewJPCN {
+    height: 510px!important;
+    min-width: 246px;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #DDD;
+    float: left;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-top: 2px
+}
+
+.GB-SUPPLE .shortCellView:hover {
+    border: solid 2px;
+    border-color: #BBB;
+    padding: 0
+}
+
+.GB-SUPPLE .withSeparator {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/v-border._V359539807_.png) no-repeat;
+    padding-left: 21px
+}
+
+.GB-SUPPLE .dealImage {
+    width: 210px;
+    height: 210px
+}
+
+.GB-SUPPLE .miniDPImageBlock {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.GB-SUPPLE .dealDesc {
+    margin-right: 21px
+}
+
+.GB-SUPPLE .tabSuppleHeading {
+    display: inline
+}
+
+.GB-SUPPLE .dealsRow {
+    border-bottom: solid 1px;
+    border-bottom-color: #DDD
+}
+
+.GB-SUPPLE .imageBlock {
+    width: 210px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.GB-SUPPLE .dealTile {
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.GB-SUPPLE .dealTileLowerDouble {
+    padding-left: 5%;
+    padding-right: 5%
+}
+
+.GB-SUPPLE .priceBlock {
+    width: 100%
+}
+
+.GB-SUPPLE .dealType {
+    display: block;
+    height: auto
+}
+
+.progbarWrapper {
+    position: relative;
+    height: 4px;
+    background-color: #DDD;
+    font-size: 1px
+}
+
+.progbar {
+    height: 4px;
+    position: absolute;
+    background-color: #E77600;
+    font-size: 1px
+}
+
+.heading4 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.255
+}
+
+.GB-SUPPLE .progbarMissed {
+    height: 4px;
+    position: absolute;
+    background-color: #555;
+    font-size: 1px
+}
+
+.GB-SUPPLE .inLine {
+    display: inline
+}
+
+.GB-SUPPLE .reviewStars {
+    display: block;
+    height: 20px
+}
+
+.GB-SUPPLE .dealContainer {
+    height: 100%;
+    position: relative
+}
+
+.GB-SUPPLE .buttonOuterContainer {
+    position: absolute;
+    bottom: 0
+}
+
+.GB-SUPPLE .bottomMinusTen {
+    position: absolute;
+    bottom: 10px
+}
+
+.GB-SUPPLE .bottomMinusFive {
+    position: absolute;
+    bottom: 5px
+}
+
+.GB-SUPPLE .filterItem {
+    margin-bottom: 11px!important;
+    width: auto!important
+}
+
+.GB-SUPPLE .filterItemTitle {
+    display: block;
+    margin-bottom: 7px
+}
+
+.GB-SUPPLE .filterItem .filterLink {
+    cursor: pointer;
+    color: #333!important
+}
+
+.GB-SUPPLE .filterItem .filterLink:hover {
+    color: #e47911!important
+}
+
+.GB-SUPPLE .filterItem .checkbox.checked {
+    font-weight: 700
+}
+
+.GB-SUPPLE .filterItem .checkbox:hover {
+    color: #e47911;
+    cursor: pointer
+}
+
+.GB-SUPPLE .filterItem .checkbox .prime {
+    height: 13px;
+    margin-right: 4px;
+    margin-left: -2px
+}
+
+.GB-SUPPLE .filterItem .clearLink {
+    margin-top: -5px;
+    margin-bottom: 5px!important;
+    display: block
+}
+
+.GB-SUPPLE .summary {
+    color: #333
+}
+
+.GB-SUPPLE .summary:hover {
+    color: #e47911
+}
+
+.GB-SUPPLE .clearFilter {
+    vertical-align: middle
+}
+
+.GB-SUPPLE .clearFilter:hover {
+    cursor: pointer;
+    color: #e47911
+}
+
+.GB-SUPPLE .dealDivider {
+    margin-bottom: 0;
+    height: 0
+}
+
+.GB-SUPPLE .filterResultBar {
+    padding-left: 21px;
+    padding-right: 21px
+}
+
+.GB-SUPPLE .filterSummaryBar {
+    margin-top: 5px
+}
+
+.GB-SUPPLE .filters {
+    padding-top: 11px;
+    padding-left: 21px;
+    background-color: #f5f5f5
+}
+
+.GB-SUPPLE .gridColumn2.singleCell {
+    width: 50%
+}
+
+.GB-SUPPLE .gridColumn2.doubleCell {
+    width: 100%
+}
+
+.GB-SUPPLE .gridColumn3.singleCell {
+    width: 33.33%
+}
+
+.GB-SUPPLE .gridColumn3.doubleCell {
+    width: 66.66%
+}
+
+.GB-SUPPLE .gridColumn4.singleCell {
+    width: 25%
+}
+
+.GB-SUPPLE .gridColumn4.doubleCell {
+    width: 50%
+}
+
+.GB-SUPPLE .gridColumn5.singleCell {
+    width: 20%
+}
+
+.GB-SUPPLE .gridColumn5.doubleCell {
+    width: 40%
+}
+
+.GB-SUPPLE .gridColumn6.singleCell {
+    width: 16.5%
+}
+
+.GB-SUPPLE .gridColumn6.doubleCell {
+    width: 33%
+}
+
+.GB-SUPPLE .gridColumn7.singleCell {
+    width: 14.25%
+}
+
+.GB-SUPPLE .gridColumn7.doubleCell {
+    width: 28.5%
+}
+
+.GB-SUPPLE .gridColumn8.singleCell {
+    width: 12.5%
+}
+
+.GB-SUPPLE .gridColumn8.doubleCell {
+    width: 25%
+}
+
+.GB-SUPPLE .gridColumn10.singleCell {
+    width: 10%
+}
+
+.GB-SUPPLE .gridColumn10.doubleCell {
+    width: 20%
+}
+
+.GB-SUPPLE .gridColumn12.singleCell {
+    width: 8.3%
+}
+
+.GB-SUPPLE .gridColumn12.doubleCell {
+    width: 16.6%
+}
+
+.GB-SUPPLE .launchCell {
+    overflow: hidden
+}
+
+.GB-SUPPLE .launchCell:hover {
+    background-color: rgba(17, 17, 17, .04);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#04111111, endColorstr=#04111111)";
+    border: solid 2px #BBB
+}
+
+.GB-SUPPLE .launchCell .hoverVisible {
+    display: none
+}
+
+.popUpModal {
+    padding: 10px
+}
+
+.GB-SUPPLE .visibleCss {
+    visibility: visible
+}
+
+.GB-SUPPLE .hiddenCss {
+    visibility: hidden
+}
+
+.GB-SUPPLE .restVisible {
+    display: block
+}
+
+.GB-SUPPLE .hoverVisible {
+    display: none
+}
+
+.GB-SUPPLE .shortCellView:hover .restVisible {
+    display: none
+}
+
+.GB-SUPPLE .shortCellView:hover .hoverVisible {
+    display: block
+}
+
+.GB-SUPPLE .shortCellView:hover .backGround {
+    background-color: #111;
+    opacity: .04;
+    filter: alpha(opacity=4);
+    zoom: 1
+}
+
+.GB-SUPPLE .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.GB-SUPPLE .rightMostDiv {
+    border-right: 1px solid #DDD;
+    padding-right: 1px
+}
+
+.GB-SUPPLE .firstRowDiv {
+    border-left: 0;
+    border-bottom: 1px solid #DDD;
+    background-size: 1px 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(221, 221, 221, 1) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 1)), color-stop(100%, rgba(221, 221, 221, 1)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(221, 221, 221, 1) 100%);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(221, 221, 221, 1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(221, 221, 221, 1) 100%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0, rgba(221, 221, 221, 1) 100%);
+}
+
+.GB-SUPPLE .imageContainer {
+    width: 210px;
+    position: relative
+}
+
+.GB-SUPPLE .titleContainer {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    bottom: 0
+}
+
+.GB-SUPPLE .shortCellView:hover .titleContainer {
+    background: rgba(245, 245, 245, .8)
+}
+
+.GB-SUPPLE .noDealsMessage {
+    text-align: center
+}
+
+.GB-SUPPLE .allDealsText {
+    position: relative;
+    top: 110px;
+    display: block;
+    text-align: center;
+    z-index: 99;
+    word-break: break-all
+}
+
+.GB-SUPPLE .restrictionsApplyContainer {
+    float: right;
+    margin-right: 20px
+}
+
+.GB-SUPPLE .suppleTitle {
+    padding-left: 10px;
+    padding-bottom: 5px
+}
+
+.GB-SUPPLE #shipSoldInfo {
+    height: 22px;
+    width: 210px
+}
+
+.miniDPDealButton {
+    width: 160px!important
+}
+
+.fixedWidth210 {
+    width: 210px!important
+}
+
+.GB-SUPPLE .percentClaimed {
+    float: left
+}
+
+.GB-SUPPLE .time {
+    float: right
+}
+
+.inlineBlock {
+    display: inline-block
+}
+
+.unitLineHeight {
+    line-height: 1!important
+}
+
+.titleLineHeight {
+    line-height: 1.25!important
+}
+
+.fixedPaddingLeft {
+    padding-left: 5.5%!important
+}
+
+.autoHeight {
+    height: auto!important
+}
+
+.GB-SUPPLE .dotdBadge {
+    font-size: 11px!important;
+    color: #FFF!important;
+    font-weight: 700!important;
+    background: #C45500;
+    height: 18px;
+    width: 120px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative
+}
+
+.GB-SUPPLE .dotdBadge:after {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-top: 18px solid #C45500
+}
+
+.GB-SUPPLE .peaBadge {
+    font-size: 11px!important;
+    color: #111!important;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    height: 18px;
+    width: 170px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative
+}
+
+.GB-SUPPLE .peaBadge:before {
+    content: '';
+    position: absolute;
+    left: 169px;
+    top: -1px;
+    width: 5px;
+    height: 0;
+    border-top: 1px solid #DDD
+}
+
+.GB-SUPPLE .peaBadge:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    left: 162px;
+    top: 8px;
+    border-bottom: 1px solid #DDD;
+    -webkit-transform: rotate(105deg);
+    -moz-transform: rotate(105deg);
+    -o-transform: rotate(105deg);
+    -ms-transform: rotate(105deg);
+    transform: rotate(105deg)
+}
+
+#cartError {
+    margin: 10px
+}
+
+.GB-SUPPLE .watchingButton,
+.miniDPSuppleWatchButton .watchingButton {
+    color: #e47911;
+    background-color: #fff;
+    border: #e47911 solid 1px;
+    width: 100%;
+    height: 29px;
+    border-radius: 2px
+}
+
+.GB-SUPPLE .watchTheDealButton,
+.miniDPSuppleWatchButton .watchTheDealButton {
+    color: #000;
+    background-color: #E6E7EB;
+    border: #7A7D84 solid 1px;
+    width: 100%;
+    height: 29px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+    background: -webkit-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+    background: -moz-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .6) inset;
+    border: 1px solid;
+    border-color: #adb1b8 #a2a6ac #8d9096
+}
+
+.GB-SUPPLE .watchTheDealButton:hover,
+.miniDPSuppleWatchButton .watchTheDealButton:hover {
+    background: #e0e3e8;
+    background: -webkit-linear-gradient(top, #e7eaf0, #d9dce1);
+    background: -moz-linear-gradient(top, #e7eaf0, #d9dce1);
+    background: linear-gradient(to top, #e7eaf0, #d9dce1);
+    *zoom: 1
+}
+
+.GB-SUPPLE .watchTheDealButton:active,
+.miniDPSuppleWatchButton .watchTheDealButton:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2) inset;
+    background-color: #e7e9ec;
+    background-image: none;
+    filter: none
+}
+
+.GB-SUPPLE .watchTheDealButton:focus,
+.miniDPSuppleWatchButton .watchTheDealButton:focus {
+    outline: 0;
+    border-color: #E77600;
+    box-shadow: 0 0 3px rgba(228, 121, 17, .5)
+}
+
+.GB-SUPPLE .watchingButton:hover,
+.miniDPSuppleWatchButton .watchingButton:hover {
+    color: #000;
+    background-color: #E6E7EB;
+    border: #7A7D84 solid 1px;
+    width: 100%;
+    height: 29px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+    background: -webkit-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+    background: -moz-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .6) inset;
+    border: 1px solid;
+    border-color: #adb1b8 #a2a6ac #8d9096
+}
+
+.GB-SUPPLE .watchingButton:focus,
+.miniDPSuppleWatchButton .watchingButton:focus {
+    outline: 0;
+    border-color: #E77600;
+    box-shadow: 0 0 3px rgba(228, 121, 17, .5)
+}
+
+.GB-SUPPLE .watchDealPopover,
+.miniDPSuppleWatchButton .watchDealPopover {
+    display: inline-block;
+    width: 100%;
+    height: 100%
+}
+
+.GB-SUPPLE .watchButtonClicked,
+.miniDPSuppleWatchButton .watchButtonClicked {
+    color: #fff!important;
+    background-color: #e47911!important;
+    font-size: 13px!important;
+    background: linear-gradient(to bottom, #e47911, #e47911)!important;
+    background: -webkit-linear-gradient(bottom, #e47911, #e47911)!important;
+    background: -moz-linear-gradient(bottom, #e47911, #e47911)!important;
+}
+
+.GB-SUPPLE .watchingImage,
+.miniDPSuppleWatchButton .watchingImage {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/images/buttons/WatchDealImages._V316122938_.png) 10px 8px no-repeat;
+    width: 29px;
+    height: 29px;
+    background-size: 35px;
+    float: left
+}
+
+.GB-SUPPLE .stopWatchingImage,
+.miniDPSuppleWatchButton .stopWatchingImage {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/images/buttons/WatchDealImages._V316122938_.png) -16px 8px no-repeat;
+    width: 29px;
+    height: 29px;
+    background-size: 35px;
+    float: left
+}
+
+.GB-SUPPLE .watchingText,
+.miniDPSuppleWatchButton .watchingText {
+    line-height: 28px;
+    padding-left: 10%;
+    vertical-align: middle
+}
+
+.GB-SUPPLE .stopWatchingText,
+.miniDPSuppleWatchButton .stopWatchingText {
+    line-height: 28px;
+    padding-left: 8%;
+    vertical-align: middle
+}
+
+.GB-SUPPLE .watchTheDealText,
+.miniDPSuppleWatchButton .watchTheDealText {
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.GB-SUPPLE .popoverTrigger,
+.miniDPSuppleWatchButton .popoverTrigger {
+    width: 210px
+}
+
+.miniDPSuppleWatchButton {
+    width: 200px
+}
+
+.GB-M-COMMON.GB-SHOVELER {
+    overflow: visible
+}
+
+.GB-SHOVELER .padCenter {
+    position: relative;
+    margin-left: 17px!important;
+    padding-right: 33px!important
+}
+
+.GB-SHOVELER .previousButtonContainer {
+    float: left;
+    width: 2.5%!important;
+    padding-top: 140px
+}
+
+.GB-SHOVELER .nextButtonContainer {
+    float: right;
+    width: 2.5%!important;
+    padding-top: 140px
+}
+
+.GB-SHOVELER .previousButton {
+    float: left
+}
+
+.GB-SHOVELER .nextButton {
+    float: right
+}
+
+.GB-SHOVELER .nextButton>*,
+.GB-SHOVELER .previousButton>* {
+    height: 40px
+}
+
+.GB-SHOVELER .title {
+    font-size: 23px!important
+}
+
+.GB-SHOVELER .widgetContent {
+    float: left;
+    width: 95%!important;
+    margin-bottom: 5px!important;
+    min-height: 485px
+}
+
+.GB-SHOVELER .widgetLoading {
+    margin-top: 150px
+}
+
+.GB-SHOVELER .rightArrow {
+    margin-top: 10px
+}
+
+.GB-SHOVELER .disableArrow {
+    opacity: .2
+}
+
+.GB-SHOVELER .pagination {
+    float: right;
+    font-size: 14px;
+    margin-right: 7px
+}
+
+.GB-SHOVELER .stateTab {
+    float: left;
+    margin-right: 25px;
+    font-size: 15px;
+    cursor: pointer
+}
+
+.GB-SHOVELER .stateTab:hover {
+    border-bottom: 2px solid #E77600
+}
+
+.GB-SHOVELER .selectedStateTab {
+    font-weight: 700;
+    border-bottom: 2px solid #E77600
+}
+
+.GB-SHOVELER .dealTitleOneLine {
+    display: block;
+    height: 20px
+}
+
+.GB-SHOVELER .dealTitleTwoLine {
+    display: block;
+    height: 40px
+}
+
+.GB-SHOVELER .dealTitleThreeLine {
+    display: block;
+    height: 60px
+}
+
+.GB-SHOVELER .singleCellTitle {
+    display: block;
+    width: 210px
+}
+
+.GB-SHOVELER .dealView {
+    height: 485px;
+    min-width: 223px;
+    float: left;
+    padding: 2px 2px 1px 1px
+}
+
+.GB-SHOVELER .enlargedDealView {
+    height: 495px!important
+}
+
+.GB-SHOVELER .withSeparator {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/v-border._V359539807_.png) no-repeat;
+    padding-left: 21px
+}
+
+.GB-SHOVELER .dealImage {
+    width: 210px;
+    height: 210px
+}
+
+.GB-SHOVELER .miniDPImageBlock {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.GB-SHOVELER .dealDesc {
+    margin-right: 21px
+}
+
+.GB-SHOVELER .dealsRow {
+    border-bottom: solid 1px;
+    border-bottom-color: #DDD
+}
+
+.GB-SHOVELER .imageBlock {
+    width: 210px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.GB-SHOVELER .dealTile {
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.GB-SHOVELER .dealTileLowerDouble {
+    padding-left: 5%;
+    padding-right: 5%
+}
+
+.GB-SHOVELER .priceBlock {
+    width: 100%
+}
+
+.GB-SHOVELER .dealType {
+    display: block;
+    height: auto
+}
+
+.progbarWrapper {
+    position: relative;
+    height: 4px;
+    background-color: #DDD;
+    font-size: 1px
+}
+
+.progbar {
+    height: 4px;
+    position: absolute;
+    background-color: #E77600;
+    font-size: 1px
+}
+
+.heading4 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.255
+}
+
+.GB-SHOVELER .progbarMissed {
+    height: 4px;
+    position: absolute;
+    background-color: #555;
+    font-size: 1px
+}
+
+.GB-SHOVELER .inLine {
+    display: inline
+}
+
+.GB-SHOVELER .reviewStars {
+    display: block;
+    height: 20px
+}
+
+.GB-SHOVELER .dealContainer {
+    height: 100%;
+    position: relative
+}
+
+.GB-SHOVELER .buttonOuterContainer {
+    position: absolute;
+    bottom: 0
+}
+
+.GB-SHOVELER .bottomMinusTen {
+    position: absolute;
+    bottom: 20px
+}
+
+.GB-SHOVELER .bottomMinusFive {
+    position: absolute;
+    bottom: 15px
+}
+
+.GB-SHOVELER .dealDivider {
+    margin-bottom: 0;
+    height: 0
+}
+
+.popUpModal {
+    padding: 10px
+}
+
+.GB-SHOVELER .visibleCss {
+    visibility: visible
+}
+
+.GB-SHOVELER .hiddenCss {
+    visibility: hidden
+}
+
+.GB-SHOVELER .restVisible {
+    display: block
+}
+
+.GB-SHOVELER .hoverVisible {
+    display: none
+}
+
+.GB-SHOVELER .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.GB-SHOVELER .imageContainer {
+    width: 210px;
+    position: relative
+}
+
+.GB-SHOVELER .titleContainer {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    bottom: 0
+}
+
+.GB-SHOVELER .noDealsMessage {
+    text-align: center
+}
+
+.GB-SHOVELER .allDealsText {
+    position: relative;
+    top: 110px;
+    display: block;
+    text-align: center;
+    z-index: 99;
+    word-break: break-all
+}
+
+.GB-SHOVELER .restrictionsApplyContainer {
+    float: right
+}
+
+.GB-SHOVELER #shipSoldInfo {
+    height: 22px;
+    width: 210px
+}
+
+.GB-SHOVELER .percentClaimed {
+    float: left
+}
+
+.GB-SHOVELER .time {
+    float: right
+}
+
+.miniDPDealButton {
+    width: 160px!important
+}
+
+.fixedWidth210 {
+    width: 210px!important
+}
+
+.inlineBlock {
+    display: inline-block
+}
+
+.unitLineHeight {
+    line-height: 1!important
+}
+
+.titleLineHeight {
+    line-height: 1.25!important
+}
+
+.fixedPaddingLeft {
+    padding-left: 5.5%!important
+}
+
+.autoHeight {
+    height: auto!important
+}
+
+#cartError {
+    margin: 10px
+}
+
+.GB-SHOVELER .gridColumn2 {
+    width: 50%
+}
+
+.GB-SHOVELER .gridColumn3 {
+    width: 33.33%
+}
+
+.GB-SHOVELER .gridColumn4 {
+    width: 25%
+}
+
+.GB-SHOVELER .gridColumn5 {
+    width: 20%
+}
+
+.GB-SHOVELER .gridColumn6 {
+    width: 16.5%
+}
+
+.GB-SHOVELER .gridColumn7 {
+    width: 14.25%
+}
+
+.GB-SHOVELER .gridColumn8 {
+    width: 12.5%
+}
+
+.GB-SHOVELER .gridColumn9 {
+    width: 11%
+}
+
+.GB-SHOVELER .gridColumn10 {
+    width: 10%
+}
+
+.GB-SHOVELER .leftArrow {
+    margin-top: 10px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.GB-SHOVELER .dotdBadge {
+    font-size: 11px!important;
+    color: #FFF!important;
+    font-weight: 700!important;
+    background: #C45500;
+    height: 18px;
+    width: 120px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative
+}
+
+.GB-SHOVELER .dotdBadge:after {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-top: 18px solid #C45500
+}
+
+.GB-SHOVELER .peaBadge {
+    font-size: 11px!important;
+    color: #111!important;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    height: 18px;
+    width: 170px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative
+}
+
+.GB-SHOVELER .peaBadge:before {
+    content: '';
+    position: absolute;
+    left: 169px;
+    top: -1px;
+    width: 5px;
+    height: 0;
+    border-top: 1px solid #DDD
+}
+
+.GB-SHOVELER .peaBadge:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    left: 162px;
+    top: 8px;
+    border-bottom: 1px solid #DDD;
+    -webkit-transform: rotate(105deg);
+    -moz-transform: rotate(105deg);
+    -o-transform: rotate(105deg);
+    -ms-transform: rotate(105deg);
+    transform: rotate(105deg)
+}
+
+.GB-SHOVELER .watchingButton {
+    color: #e47911;
+    background-color: #fff;
+    border: #e47911 solid 1px;
+    width: 210px;
+    height: 29px;
+    border-radius: 2px
+}
+
+.GB-SHOVELER .watchTheDealButton {
+    color: #000;
+    background-color: #E6E7EB;
+    border: #7A7D84 solid 1px;
+    width: 210px;
+    height: 29px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+    background: -webkit-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+    background: -moz-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .6) inset;
+    border: 1px solid;
+    border-color: #adb1b8 #a2a6ac #8d9096
+}
+
+.GB-SHOVELER .watchTheDealButton:hover {
+    width: 210px;
+    background: #e0e3e8;
+    background: -webkit-linear-gradient(top, #e7eaf0, #d9dce1);
+    background: -moz-linear-gradient(top, #e7eaf0, #d9dce1);
+    background: linear-gradient(to top, #e7eaf0, #d9dce1);
+    *zoom: 1
+}
+
+.GB-SHOVELER .watchTheDealButton:active {
+    width: 210px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2) inset;
+    background-color: #e7e9ec;
+    background-image: none;
+    filter: none
+}
+
+.GB-SHOVELER .watchTheDealButton:focus {
+    width: 210px;
+    outline: 0;
+    border-color: #E77600;
+    box-shadow: 0 0 3px rgba(228, 121, 17, .5)
+}
+
+.GB-SHOVELER .watchingButton:hover {
+    color: #000;
+    background-color: #E6E7EB;
+    border: #7A7D84 solid 1px;
+    width: 210px;
+    height: 29px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+    background: -webkit-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+    background: -moz-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .6) inset;
+    border: 1px solid;
+    border-color: #adb1b8 #a2a6ac #8d9096
+}
+
+.GB-SHOVELER .watchingButton:focus {
+    width: 210px;
+    outline: 0;
+    border-color: #E77600;
+    box-shadow: 0 0 3px rgba(228, 121, 17, .5)
+}
+
+.GB-SHOVELER .watchDealPopover {
+    display: inline-block;
+    width: 210px;
+    height: 100%
+}
+
+.GB-SHOVELER .watchButtonClicked {
+    color: #fff!important;
+    background-color: #e47911!important;
+    font-size: 13px!important;
+    width: 210px;
+    background: linear-gradient(to bottom, #e47911, #e47911)!important;
+    background: -webkit-linear-gradient(bottom, #e47911, #e47911)!important;
+    background: -moz-linear-gradient(bottom, #e47911, #e47911)!important;
+}
+
+.GB-SHOVELER .watchingImage {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/images/buttons/WatchDealImages._V316122938_.png) 10px 8px no-repeat;
+    width: 29px;
+    height: 29px;
+    background-size: 35px;
+    float: left
+}
+
+.GB-SHOVELER .stopWatchingImage {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/goldbox/images/buttons/WatchDealImages._V316122938_.png) -16px 8px no-repeat;
+    width: 29px;
+    height: 29px;
+    background-size: 35px;
+    float: left
+}
+
+.GB-SHOVELER .watchingText {
+    line-height: 28px;
+    padding-left: 10%;
+    vertical-align: middle
+}
+
+.GB-SHOVELER .stopWatchingText {
+    line-height: 28px;
+    padding-left: 8%;
+    vertical-align: middle
+}
+
+.GB-SHOVELER .watchTheDealText {
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.GB-SHOVELER .popoverTrigger {
+    width: 210px
+}
+
+div.top-1 {
+    width: 80%;
+    float: left
+}
+
+div.top-2 {
+    width: 20%;
+    float: right;
+    margin-top: -3px
+}
+
+div.gbox-section {
+    margin-bottom: 20px;
+    clear: both;
+    width: 100%
+}
+
+div.gbox-ad-row {
+    width: 1300px;
+    overflow: hidden
+}
+
+div.gbox-short-ad {
+    float: left;
+    width: 455px;
+    text-align: left;
+    overflow: hidden
+}
+
+div.slot2 {
+    min-width: 970px;
+    width: 100%;
+    clear: both
+}
+
+div.slotContainer {
+    width: 100%;
+    clear: both
+}
+
+div.gbh1 {
+    color: #E47911;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    display: inline
+}
+
+div.gbh1-bold {
+    float: left;
+    line-height: 27px;
+    color: #333;
+    font-size: 28px;
+    font-family: Arial;
+    margin-top: 10px
+}
+
+div.gbh1-nonbold {
+    font-weight: 400;
+    float: left;
+    line-height: 28px;
+    margin-top: 10px
+}
+
+div.gb-header {
+    margin-left: 20px
+}
+
+div.gbhcopy {
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-right: 10px;
+    min-width: 760px;
+    clear: both;
+    font-family: Arial;
+    display: inline;
+    float: left
+}
+
+.bottomSheetContainer {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.BOTTOM-SHEET .bottomSheetBackground {
+    opacity: .8;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, .6);
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.BOTTOM-SHEET .bottomSheetModal {
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    z-index: 2090;
+    position: relative;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.bottomSheetContainer::-webkit-scrollbar {
+    width: 0;
+    background: 0 0
+}
+
+.BOTTOM-SHEET .bottomSheetContents {
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.BOTTOM-SHEET .bottomSheetHeader {
+    border-bottom: thin solid #DDD;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.bottomSheetFooter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: thin solid #DDD;
+    z-index: 2090;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.BOTTOM-SHEET .slideAnimateUp {
+    -webkit-transition: all .4s cubic-bezier(0, .71, .54, .97);
+    -moz-transition: all .4s cubic-bezier(0, .71, .54, .97);
+    -o-transition: all .4s cubic-bezier(0, .71, .54, .97);
+    -ms-transition: all .4s cubic-bezier(0, .71, .54, .97);
+    transition: all .4s cubic-bezier(0, .71, .54, .97)
+}
+
+.BOTTOM-SHEET .slideAnimateDown {
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in
+}
+
+.BOTTOM-SHEET .scrollTransition {
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    -ms-transition: all .15s linear;
+    transition: all .15s linear
+}
+
+.GB-M-HERO-CN {
+    height: 350px
+}
+
+.GB-M-HERO-CN .widgetTitleLanding {
+    display: inline;
+    color: #000;
+    padding-left: 15px;
+    width: 60%;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.GB-M-HERO-CN .widgetScroll {
+    overflow-x: visible;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 45px
+}
+
+.GB-M-HERO-CN .textCenter {
+    text-align: center
+}
+
+.GB-M-HERO-CN .widgetTitleRow {
+    height: 45px;
+    line-height: 45px
+}
+
+.GB-M-HERO-CN .widgetTitleBlock {
+    width: 60%;
+    margin-right: 0!important
+}
+
+.GB-M-HERO-CN .emptyRow {
+    height: 20px
+}
+
+.GB-M-HERO-CN .addToCartButton {
+    height: 35px;
+    width: 100%
+}
+
+.GB-M-HERO-CN .addToCartButtonBlock {
+    display: block;
+    width: 160px;
+    margin: auto
+}
+
+.GB-M-HERO-CN .priceBlock {
+    height: 20px;
+    width: 100%;
+    line-height: 20px
+}
+
+.GB-M-HERO-CN .a-button-inner {
+    position: inherit!important;
+    height: 33px!important
+}
+
+.GB-M-HERO-CN .a-button-inner .a-button-text {
+    line-height: 33px!important;
+    font-size: 12px;
+    height: 33px!important;
+    margin-top: -8px
+}
+
+.GB-M-HERO-CN .a-carousel-viewport {
+    overflow-y: hidden
+}
+
+.GB-M-HERO-CN .titleRedirectText {
+    height: 22px;
+    line-height: 22px!important;
+    color: #000;
+    display: inline-block;
+    float: right
+}
+
+.GB-M-HERO-CN .widgetAlert .a-box-inner {
+    height: 33px;
+    padding: initial;
+    position: inherit!important
+}
+
+.GB-M-HERO-CN .widgetAlert .a-box-inner .a-alert-content {
+    height: 33px;
+    line-height: 33px
+}
+
+.GB-M-HERO-CN .titleRedirectImage {
+    margin-top: 3px;
+    margin-right: 15px;
+    margin-left: 5px;
+    float: right
+}
+
+.GB-M-HERO-CN .orangeBackground {
+    background: #C45500
+}
+
+.GB-M-HERO-CN .grayBackground {
+    background: #767676
+}
+
+.GB-M-HERO-CN .dealsByCategoryImage {
+    margin-top: 12px;
+    margin-right: 10px
+}
+
+.GB-M-HERO-CN .dealsByCategoryRow {
+    height: 40px;
+    text-decoration: none;
+    line-height: 40px;
+    color: #fff;
+    background-color: #F90;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: initial
+}
+
+.GB-M-HERO-CN .dealsByCategoryLink {
+    padding-left: 10px;
+    color: #fff
+}
+
+.GB-M-HERO-CN .titleRedirectBlock {
+    padding-top: 12px;
+    width: 40%;
+    height: 45px
+}
+
+.GB-M-HERO-CN .cardViewMain {
+    padding: 8px 4px 2px 4px
+}
+
+.GB-M-HERO-CN .cardViewFooter {
+    background-color: #F3F3F3
+}
+
+.GB-M-HERO-CN .cardViewBorder {
+    border: 1px solid #ccc
+}
+
+.GB-M-HERO-CN .cardViewFooterSoldout {
+    background-color: #F9DBCC;
+    text-align: center
+}
+
+.GB-M-HERO-CN .soldoutText {
+    color: #B12704;
+    height: 20px;
+    line-height: 20px!important
+}
+
+.GB-M-HERO-CN .progbarAvailableBorder {
+    font-size: 20px;
+    height: 20px;
+    text-align: center
+}
+
+.GB-M-HERO-CN .progbarAvailableFill {
+    background-color: #C1D7DE;
+    height: 100%
+}
+
+.GB-M-HERO-CN .progbarGrayFill {
+    background-color: #ddd;
+    height: 100%
+}
+
+.GB-M-HERO-CN .progbarAvailableText {
+    width: 180px;
+    text-align: center;
+    display: block;
+    margin-top: -18px
+}
+
+.GB-M-HERO-CN .timeStringCenter {
+    height: 20px;
+    line-height: 20px!important;
+    text-align: center
+}
+
+.GB-M-HERO-CN .touchAnchorCenter {
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin: auto
+}
+
+.GB-M-HERO-CN .touchAnchor {
+    text-align: center
+}
+
+.GB-M-HERO-CN .noDealsMessage {
+    text-align: center;
+    margin: 50px 0
+}
+
+.GB-M-HERO-CN .dealTitle {
+    display: block;
+    height: 20px
+}
+
+.GB-M-HERO-CN .ellipsify {
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value=""></h:outputText>
+                        
+        </ui:define>
+        <ui:define name="body">
+            <h:form>
+                <div class="jumbotron" style="text-align:center">
+
+                    <h1>Mobify Store</h1>
+                    <p>Mobify Store Unlimited is you one stop solution for all your Smart phones world</p>
+                    <h:commandButton value="Dive In" action="/public/product/List.xhtml" class="btn btn-primary btn-lg btn-danger">
+                    </h:commandButton>
+
+                    <img class="center-block" src="resources/biglogo.jpg" />
+
+                </div>
+
+
+                <b:carousel class="center-block"  id="parque">
+                    <b:carouselItem>
+                        <a href="http://www.htc.com/"> <img src="resources/ProductImg/HTC-10.jpg"  class="center-block" style="width:300px; height:400px;"  /></a>
+                    </b:carouselItem>
+                    <b:carouselItem>
+                        <a href="http://www.sonymobile.com/us/xperia/"><img src="resources/ProductImg/Xperia-Z5.jpg" class="center-block" style="width:300px; height:400px;"  /></a>
+                    </b:carouselItem>
+                    <b:carouselItem>
+                        <a href="http://www.huawei.com/"><img src="resources/ProductImg/G7.jpg" class="center-block" style="width:300px; height:400px;"  /></a>
+                    </b:carouselItem>
+                    <b:carouselItem>
+                        <a href="https://www.google.com/nexus/"><img src="resources/ProductImg/Nexus6P.jpg" class="center-block" style="width:300px; height:400px;"  /></a>
+                    </b:carouselItem>
+
+                </b:carousel>
+
+
+
+
+                <br />
+
+                <div class="jumbotron">
+                    <h2>Buy Smart Phones Online on Mobify</h2>
+                    <p>
+                        Online shopping for Mobiles in the fast changing and forever updated digital landscape is not an easy task.
+                        However, at Amazon India, choosing from so many brands that offer a multitude of features just got easier. Browse online for a wide range of Smart phones, Basic Smart phone and filter your choice as your sort by Mobile brands.
+                    </p>
+
+
+                </div>
+
+            </h:form>
+
+        </ui:define>
+    </ui:composition>
+</html>
+

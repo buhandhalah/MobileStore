@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, inital-scale=1" />
+        <meta http-equiv="X-UA-Conpatible" content="IE-edge" />
+    </h:head>
+    <ui:composition template="/template.xhtml">
+    <ui:define name="body">
+        
+        <br/>
+        
+        <b:container>
+            <h:outputText styleClass="h2" value="Contact Us"/>
+            <br />
+            <br />
+            <h:outputText styleClass="h3" value="Author Information"/>
+            <br />
+            <br />
+            <address>
+                <h3>  MOHAMMED AMEER </h3><br />
+                P. O. BOX 2361, DOHA, QATAR<br />
+                <abbr title="Phone">P:</abbr>
+                (974)-44660794 <br />
+                <strong>Email:</strong>   <a href="mailto:ameer240995@gmail.com">ameer240995@gmail.com</a><br />
+                <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+                <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+            </address>
+            <hr />
+            <br />
+            
+          
+            <h3>Our Location</h3>
+            <a href="https://goo.gl/maps/JL4qg"><img src="resources/location.png" alt="Map Location"></img></a>
+            
+        </b:container>
+    </ui:define>
+</ui:composition>
+</html>
+

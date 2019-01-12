@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateRatingTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateRatingLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{ratingController.selected.id}" title="#{bundle.CreateRatingTitle_id}" required="true" requiredMessage="#{bundle.CreateRatingRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.CreateRatingLabel_title}" for="title" />
+                    <h:inputText id="title" value="#{ratingController.selected.title}" title="#{bundle.CreateRatingTitle_title}" />
+                    <h:outputLabel value="#{bundle.CreateRatingLabel_feedback}" for="feedback" />
+                    <h:inputText id="feedback" value="#{ratingController.selected.feedback}" title="#{bundle.CreateRatingTitle_feedback}" />
+                    <h:outputLabel value="#{bundle.CreateRatingLabel_productRating}" for="productRating" />
+                    <h:inputText id="productRating" value="#{ratingController.selected.productRating}" title="#{bundle.CreateRatingTitle_productRating}" />
+                    <h:outputLabel value="#{bundle.CreateRatingLabel_customerId}" for="customerId" />
+                    <h:selectOneMenu id="customerId" value="#{ratingController.selected.customerId}" title="#{bundle.CreateRatingTitle_customerId}" >
+                        <f:selectItems value="#{customerController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.CreateRatingLabel_productId}" for="productId" />
+                    <h:selectOneMenu id="productId" value="#{ratingController.selected.productId}" title="#{bundle.CreateRatingTitle_productId}" >
+                        <f:selectItems value="#{productController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{ratingController.create}" value="#{bundle.CreateRatingSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{ratingController.prepareList}" value="#{bundle.CreateRatingShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateRatingIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

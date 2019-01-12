@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateFaqTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateFaqLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{faqController.selected.id}" title="#{bundle.CreateFaqTitle_id}" required="true" requiredMessage="#{bundle.CreateFaqRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.CreateFaqLabel_question}" for="question" />
+                    <h:inputText id="question" value="#{faqController.selected.question}" title="#{bundle.CreateFaqTitle_question}" />
+                    <h:outputLabel value="#{bundle.CreateFaqLabel_answer}" for="answer" />
+                    <b:inputText tiny-screen="one-fourth" id="answer" value="#{faqController.selected.answer}" title="#{bundle.CreateFaqTitle_answer}" />
+                    <h:outputLabel value="#{bundle.CreateFaqLabel_faqStatus}" for="faqStatus" />
+                    <h:inputText id="faqStatus" value="#{faqController.selected.faqStatus}" title="#{bundle.CreateFaqTitle_faqStatus}" />
+                    <h:outputLabel value="#{bundle.CreateFaqLabel_customerId}" for="customerId" />
+                    <h:selectOneMenu id="customerId" value="#{faqController.selected.customerId}" title="#{bundle.CreateFaqTitle_customerId}" >
+                        <f:selectItems value="#{customerController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{faqController.create}" value="#{bundle.CreateFaqSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{faqController.prepareList}" value="#{bundle.CreateFaqShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateFaqIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

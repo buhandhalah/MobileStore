@@ -1,0 +1,20 @@
+Thu Oct 19 19:21:37 AST 2017 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Thu Oct 19 19:21:37 AST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-015f-3570-7fdb-000065902c75 
+on database directory C:\Users\ANEER ABDULRAHMAN\Desktop\Projects\MobileStore\MobileStore\MobileStore with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_151/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_151-b12
+user.dir=C:\Program Files\Java\jdk1.8.0_151\db
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\ANEER ABDULRAHMAN\Desktop\Projects\MobileStore\MobileStore
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 19 19:46:29 AST 2017: Shutting down Derby engine
+----------------------------------------------------------------
+Thu Oct 19 19:46:29 AST 2017:
+Shutting down instance a816c00e-015f-3570-7fdb-000065902c75 on database directory C:\Users\ANEER ABDULRAHMAN\Desktop\Projects\MobileStore\MobileStore\MobileStore with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+----------------------------------------------------------------

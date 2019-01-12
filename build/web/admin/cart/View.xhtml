@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewCartTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewCartLabel_id}"/>
+                    <h:outputText value="#{cartController.selected.id}" title="#{bundle.ViewCartTitle_id}"/>
+                    <h:outputText value="#{bundle.ViewCartLabel_CStatus}"/>
+                    <h:outputText value="#{cartController.selected.CStatus}" title="#{bundle.ViewCartTitle_CStatus}"/>
+                    <h:outputText value="#{bundle.ViewCartLabel_datePurchased}"/>
+                    <h:outputText value="#{cartController.selected.datePurchased}" title="#{bundle.ViewCartTitle_datePurchased}">
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:outputText>
+                    <h:outputText value="#{bundle.ViewCartLabel_paymentId}"/>
+                    <h:outputText value="#{cartController.selected.paymentId}" title="#{bundle.ViewCartTitle_paymentId}"/>
+                    <h:outputText value="#{bundle.ViewCartLabel_shippingId}"/>
+                    <h:outputText value="#{cartController.selected.shippingId}" title="#{bundle.ViewCartTitle_shippingId}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{cartController.destroyAndView}" value="#{bundle.ViewCartDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewCartEditLink}"/>
+                <br />
+                <h:commandLink action="#{cartController.prepareCreate}" value="#{bundle.ViewCartCreateLink}" />
+                <br />
+                <h:commandLink action="#{cartController.prepareList}" value="#{bundle.ViewCartShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewCartIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

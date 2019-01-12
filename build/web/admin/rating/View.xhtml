@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewRatingTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewRatingLabel_id}"/>
+                    <h:outputText value="#{ratingController.selected.id}" title="#{bundle.ViewRatingTitle_id}"/>
+                    <h:outputText value="#{bundle.ViewRatingLabel_title}"/>
+                    <h:outputText value="#{ratingController.selected.title}" title="#{bundle.ViewRatingTitle_title}"/>
+                    <h:outputText value="#{bundle.ViewRatingLabel_feedback}"/>
+                    <h:outputText value="#{ratingController.selected.feedback}" title="#{bundle.ViewRatingTitle_feedback}"/>
+                    <h:outputText value="#{bundle.ViewRatingLabel_productRating}"/>
+                    <h:outputText value="#{ratingController.selected.productRating}" title="#{bundle.ViewRatingTitle_productRating}"/>
+                    <h:outputText value="#{bundle.ViewRatingLabel_customerId}"/>
+                    <h:outputText value="#{ratingController.selected.customerId}" title="#{bundle.ViewRatingTitle_customerId}"/>
+                    <h:outputText value="#{bundle.ViewRatingLabel_productId}"/>
+                    <h:outputText value="#{ratingController.selected.productId}" title="#{bundle.ViewRatingTitle_productId}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{ratingController.destroyAndView}" value="#{bundle.ViewRatingDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewRatingEditLink}"/>
+                <br />
+                <h:commandLink action="#{ratingController.prepareCreate}" value="#{bundle.ViewRatingCreateLink}" />
+                <br />
+                <h:commandLink action="#{ratingController.prepareList}" value="#{bundle.ViewRatingShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewRatingIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

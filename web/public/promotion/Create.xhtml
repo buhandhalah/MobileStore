@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreatePromotionTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreatePromotionLabel_promoId}" for="promoId" />
+                    <h:inputText id="promoId" value="#{promotionController.selected.promoId}" title="#{bundle.CreatePromotionTitle_promoId}" required="true" requiredMessage="#{bundle.CreatePromotionRequiredMessage_promoId}"/>
+                    <h:outputLabel value="#{bundle.CreatePromotionLabel_startDate}" for="startDate" />
+                    <h:inputText id="startDate" value="#{promotionController.selected.startDate}" title="#{bundle.CreatePromotionTitle_startDate}" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.CreatePromotionLabel_endDate}" for="endDate" />
+                    <h:inputText id="endDate" value="#{promotionController.selected.endDate}" title="#{bundle.CreatePromotionTitle_endDate}" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.CreatePromotionLabel_productId}" for="productId" />
+                    <h:selectOneMenu id="productId" value="#{promotionController.selected.productId}" title="#{bundle.CreatePromotionTitle_productId}" >
+                        <f:selectItems value="#{productController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{promotionController.create}" value="#{bundle.CreatePromotionSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{promotionController.prepareList}" value="#{bundle.CreatePromotionShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreatePromotionIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

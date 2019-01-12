@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui" >
+
+    <!--<h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title><ui:insert name="title">Default Title</ui:insert></title>
+        <h:outputStylesheet library="css" name="jsfcrud.css"/>
+    </h:head> -->
+
+    <!-- <h:body>
+         <div >
+             <h:link outcome="/user/product/List" value="Products"/> ||            
+             <h:link outcome="/user/customer/View" value="Accounts"/> ||
+             <h:link outcome="/user/cart/View" value="My Cart"/> ||
+             
+             <h:form style="float: right">
+             <h:commandLink value="logout" action="#{userController.logout}" />||
+             </h:form>
+         </div> 
+         <h1>
+             <ui:insert name="title">Default Title</ui:insert>
+         </h1>
+         <p>
+             <ui:insert name="body">Default Body</ui:insert>
+         </p>
+     </h:body> -->
+
+    
+    
+    <!--<h:body style="padding: 60px;">
+        <h:form>
+            <b:navBar brand="Project name" brandHref="#" fixed="top" inverse="true">
+                <b:navbarLinks>
+                    <b:navLink outcome="/user/product/List" value="Products"></b:navLink>
+                    <b:navLink outcome="/user/customer/View" value="Accounts"></b:navLink>
+                    <b:navLink outcome="/user/cart/View" value="My Cart"></b:navLink>           
+                </b:navbarLinks>
+                
+                <b:navbarLinks style="float: right">
+                    <b:navCommandLink value="logout" action="#{userController.logout}"></b:navCommandLink>>
+                </b:navbarLinks>
+            
+            </b:navBar>
+        </h:form>
+
+        <b:container>
+            <b:jumbotron>
+                <h1>
+                    <ui:insert name="title">Default Title</ui:insert>
+                </h1>
+                <p>
+                    <ui:insert name="body">Default Body</ui:insert>
+                </p>
+            </b:jumbotron>
+
+        </b:container> 
+        
+        </h:body>
+        -->
+
+         <ui:composition template="/template.xhtml">
+    <ui:define name="navbar">
+        <b:navbarLinks pull="right">
+            <b:navCommandLink  value="Logout" action="#{userController.logout}" />
+        </b:navbarLinks>
+    </ui:define>
+    </ui:composition>
+
+
+
+
+</html>

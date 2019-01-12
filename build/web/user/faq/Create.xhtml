@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="">
+            <h:outputText value="#{bundle.CreateFaqTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid>
+
+                    <h1 style="color: red"> Ask new Question: </h1> 
+                    <h:outputLabel  value=""  style="color: red" for="question"  />
+                    <br/>
+                    
+                    <b:inputTextarea style="min-width:100%" field-size="large" id="question" value="#{userController.question}" title="#{bundle.CreateFaqTitle_question}" />
+
+
+
+                </h:panelGrid>
+                <h:commandLink action="#{userController.createQuestion()}" class="btn btn-warning" value="Create" />
+
+                <br /> <br />
+
+
+                <h:commandLink action="#{faqController.prepareList}" value="#{bundle.CreateFaqShowAllLink}" immediate="true"/>
+                &#160; &#160;
+                <h:commandLink action="/public/product/List"  value="Go to Product List" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

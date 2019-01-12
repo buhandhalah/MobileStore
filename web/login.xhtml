@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+  <!--   <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body> -->
+    
+     <ui:composition template="/login_template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Login Form"></h:outputText>
+                        
+        </ui:define>
+        <ui:define name="body" >
+            <h:panelGroup layout="block" >
+            <form method="POST" action="j_security_check">
+                User ID: <input style="color: #485059;" type="text" name="j_username" /><br /><br />
+                Password: <input  type="password" name="j_password" style="color: #485059;"/>
+                <br />
+                <br />
+                 <p class="spacing">
+                <input class="myButton float-left"  type="submit" value="Login" />
+                <input style="color: #e33b06" class="myButton float-left" type="reset" value="Reset" />
+                <h:button class="myButton float-left" outcome="/public/customer/Create" value="Register"/>
+                 </p>
+            </form>
+                 </h:panelGroup>
+            </ui:define>            
+    </ui:composition>
+</html>

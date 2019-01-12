@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="">
+            <h:outputText value="#{bundle.ViewCartTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+               
+                <h3 style="color: red; font-weight: bold; font-size: 18px">MOST SOLD PRODUCT</h3>
+                <b:dataTable value="#{userController.mostSold}" var="item" border="8"  style="border:solid 4px" page-length="1"> 
+                 
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText style="color: blue" value="Total Quantity Sold Out"/>
+                            </f:facet>
+                            <h:outputText  style="color: red; font-weight: bold; font-size: 18px" value="#{item.quantity}"/> 
+                        </h:column>
+                    
+                     <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="PRODUCT IMAGE"/>
+                            </f:facet>
+                         <h:graphicImage value="/resources/ProductImg/#{item.productId.imgFilename}" width="100" />
+                           
+                        </h:column>
+                     <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="MODEL NAME"/>
+                            </f:facet>
+                         <h:outputText value="#{item.productId.brand}  #{item.productId.modelName}"/>
+                        </h:column>
+                   
+                
+                    </b:dataTable>
+                
+                 <b:dataTable value="#{userController.cartitem}" var="item" border="0"  style="border:solid 1px"> 
+                   
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCartitemTitle_productId}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.productId}"/>
+                        </h:column>
+                     <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Product Image"/>
+                            </f:facet>
+                         <h:graphicImage value="/resources/ProductImg/#{item.productId.imgFilename}" width="100" />
+                           
+                        </h:column>
+                     <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="model Name"/>
+                            </f:facet>
+                         <h:outputText value="#{item.productId.brand}  #{item.productId.modelName}"/>
+                        </h:column>
+                     <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Sub-total"/>
+                            </f:facet>
+                            <h:outputText value="#{item.productId.price * item.quantity}"/>
+                        </h:column>
+                     <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Unit Price"/>
+                            </f:facet>
+                         <h:outputText value="#{item.productId.price}"/>
+                        </h:column>
+                      <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCartitemTitle_quantity}"/>
+                            </f:facet><h4 style="color: red"> 
+                            <h:outputText value="#{item.quantity}"/></h4>
+                             <h:outputText value=" "/>
+                             <h:commandLink action="#{userController.increaseQuantity(item)}" class="btn btn-success" style="color: black; font-weight: bold"  value=" +1 "/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{userController.decreaseQuantity(item)}" class="btn btn-danger" style="font-weight: bold"  value=" -1 "/>
+                             
+                        </h:column>
+                        
+                    </b:dataTable>
+                <br/>
+                <h4 style="color: red"> <h:outputLabel value="Cart Total =  #{userController.cartTotal}"/></h4>
+                <br />
+                <h:commandLink action="#{cartController.destroyAndView}" value="#{bundle.ViewCartDestroyLink}"/>
+                <br />
+               
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewCartIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

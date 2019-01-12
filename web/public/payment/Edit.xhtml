@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditPaymentTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditPaymentLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{paymentController.selected.id}" title="#{bundle.EditPaymentTitle_id}" required="true" requiredMessage="#{bundle.EditPaymentRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.EditPaymentLabel_PMethod}" for="PMethod" />
+                    <h:inputText id="PMethod" value="#{paymentController.selected.PMethod}" title="#{bundle.EditPaymentTitle_PMethod}" />
+                    <h:outputLabel value="#{bundle.EditPaymentLabel_idNumber}" for="idNumber" />
+                    <h:inputText id="idNumber" value="#{paymentController.selected.idNumber}" title="#{bundle.EditPaymentTitle_idNumber}" />
+                    <h:outputLabel value="#{bundle.EditPaymentLabel_customerId}" for="customerId" />
+                    <h:selectOneMenu id="customerId" value="#{paymentController.selected.customerId}" title="#{bundle.EditPaymentTitle_customerId}" required="true" requiredMessage="#{bundle.EditPaymentRequiredMessage_customerId}">
+                        <f:selectItems value="#{customerController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <h:commandLink action="#{paymentController.update}" value="#{bundle.EditPaymentSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditPaymentViewLink}"/>
+                <br />
+                <h:commandLink action="#{paymentController.prepareList}" value="#{bundle.EditPaymentShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditPaymentIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

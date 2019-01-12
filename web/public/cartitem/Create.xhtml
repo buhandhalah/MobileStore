@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateCartitemTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateCartitemLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{cartitemController.selected.id}" title="#{bundle.CreateCartitemTitle_id}" required="true" requiredMessage="#{bundle.CreateCartitemRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.CreateCartitemLabel_quantity}" for="quantity" />
+                    <h:inputText id="quantity" value="#{cartitemController.selected.quantity}" title="#{bundle.CreateCartitemTitle_quantity}" />
+                    <h:outputLabel value="#{bundle.CreateCartitemLabel_cartId}" for="cartId" />
+                    <h:selectOneMenu id="cartId" value="#{cartitemController.selected.cartId}" title="#{bundle.CreateCartitemTitle_cartId}" >
+                        <f:selectItems value="#{cartController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.CreateCartitemLabel_productId}" for="productId" />
+                    <h:selectOneMenu id="productId" value="#{cartitemController.selected.productId}" title="#{bundle.CreateCartitemTitle_productId}" >
+                        <f:selectItems value="#{productController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{cartitemController.create}" value="#{bundle.CreateCartitemSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{cartitemController.prepareList}" value="#{bundle.CreateCartitemShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateCartitemIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

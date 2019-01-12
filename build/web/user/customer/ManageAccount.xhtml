@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+        </ui:define>
+        <ui:define name="body">
+            <h2>Manage Account.</h2>
+            <p>You're logged in as <strong>#{userController.user}</strong></p>
+            <h4>Change Password Form</h4>
+            <hr />
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+
+            <h:form>
+                <h:panelGrid columns="2" styleClass="p-table">
+                    <h:outputLabel value="Current password" styleClass="p-margin-right"/>
+                    <h:inputText title="#{bundle.EditCustomerTitle_CPassword}" required="true" requiredMessage="#{bundle.EditCustomerRequiredMessage_OPassword}"/>
+                    <h:outputLabel value="New password" for="CPassword" styleClass="p-margin-right"/>
+                    <h:inputText id="CPassword" value="#{userController.selected.CPassword}" title="#{bundle.EditCustomerTitle_CPassword}" required="true" requiredMessage="#{bundle.EditCustomerRequiredMessage_CPassword}"/>
+                </h:panelGrid>
+                <br />
+                <h:panelGroup>
+                    <h:commandLink action="#{userController.updatePassword}" value="Change password" styleClass="p-save-button"/>
+                </h:panelGroup>
+                <br />
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui" > 
+  
+    
+    <ui:composition template="/template.xhtml">
+        <ui:define name="">
+            <h:outputText value="#{bundle.ListProductTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                
+               <h:selectOneMenu id="brands" value="#{userController.brand}" style="float: right" onchange="submit()">
+                    <f:selectItem itemLabel="All brands" itemValue=""/>
+                        <f:selectItems value="#{userController.brands}"/>
+                    </h:selectOneMenu> 
+              
+                
+                <h:panelGroup id="messagePanel" layout="block">
+                 -  Maximum Price
+                    <b:inputText tiny-screen="one-fourth" id="price" value="#{userController.maxPrice}"/>
+                    <b:button value="Go" onclick="submit()" class="btn btn-success" />
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                
+                <h:outputText escape="false" value="#{bundle.ListProductEmpty}" rendered="#{productController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{productController.items.rowCount > 0}">
+                  
+                    
+                -   
+                     <b:dataTable value="#{userController.products}" var="item" border="0" style="border:solid 2px; width:100%">   
+                         <h:column>
+                           
+                             <f:facet name="header">
+                                <h:outputText value="S:no"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                       <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Brand"/>
+                            </f:facet>
+                            <h:outputText value="#{item.brand}"/>
+                        </h:column>
+                         <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Model"/>
+                            </f:facet>
+                            <h:outputText value="#{item.modelName}"/>
+                        </h:column>
+                        
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Product Image"/>
+                            </f:facet>
+                           <h:graphicImage value="/resources/ProductImg/#{item.imgFilename}" width="200"   />
+                              
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Price"/>
+                            </f:facet>
+                            <h:outputText value="#{item.price}"/>
+                        </h:column>
+                        
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText style="color: red; font-weight: bold; font-size: 16px" value="Popularity"/>
+                            </f:facet>
+                            <h:outputText style="color: red; font-weight: bold" value="#{userController.findProductPopularity(item)} %"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{userController.viewProduct(item)}" value="#{bundle.ListProductViewLink}"/>
+                            <h:outputText value=" "/>
+                            
+                            <h:commandLink action="#{userController.prepareBuy(item.id)}" value="Buy"/>
+                        </h:column>
+                    </b:dataTable>
+                </h:panelGroup>
+                <br />
+              <!--  <h:commandLink action="#{productController.prepareCreate}" value="#{bundle.ListProductCreateLink}"/> -->
+                <br />
+                <br />
+                <h:link outcome="/user/customer/View" value="Go to Customer Home Page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

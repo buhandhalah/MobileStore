@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="">
+            <h:outputText value="#{bundle.EditFaqTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h1 style="color:red">  FAQ Answering </h1> <br/> <br/>
+            <h:form>
+                <h:panelGrid columns="1">
+                    <h:outputLabel value="#{bundle.EditFaqLabel_id}" for="id" />
+                    <b:inputText id="id" value="#{faqController.selected.id}" title="#{bundle.EditFaqTitle_id}" required="true" requiredMessage="#{bundle.EditFaqRequiredMessage_id}"/>
+                    <br> </br>
+                    <h:outputLabel value="#{bundle.EditFaqLabel_question}" for="question" />
+                    <h:outputLabel  style="min-width:100%;color: red"  id="question" value="#{faqController.selected.question}" title="#{bundle.EditFaqTitle_question}" />
+                    <br> </br> <br> </br>
+                    <h:outputLabel value="#{bundle.EditFaqLabel_answer}" for="answer" />
+                    <b:inputTextarea style="min-width:100%" field-size="large" id="answer" value="#{faqController.selected.answer}" title="#{bundle.EditFaqTitle_answer}" />
+                    <br> </br>
+                    <h:outputLabel value="#{bundle.EditFaqLabel_faqStatus}" for="faqStatus" />
+                    <b:inputText id="faqStatus" value="#{faqController.selected.faqStatus}" title="#{bundle.EditFaqTitle_faqStatus}" />
+                    <br> </br>
+                    <h:outputLabel value="#{bundle.EditFaqLabel_customerId}" for="customerId" />
+                    <h:outputLabel style="min-width:100%;color: blue" value="#{faqController.selected.customerId}" for="customerId" />
+                   
+                
+                </h:panelGrid>
+                <h:commandLink action="#{faqController.update}" class="btn btn-warning" value="#{bundle.EditFaqSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditFaqViewLink}" /> &#160; &#160; || &#160; &#160; 
+                
+                <h:commandLink action="#{faqController.prepareList}" value="#{bundle.EditFaqShowAllLink}" immediate="true"/>
+               &#160; &#160; || &#160; &#160;
+                <h:link outcome="/index" value="#{bundle.EditFaqIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

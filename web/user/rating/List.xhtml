@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="">
+            <h:outputText value="#{bundle.ListRatingTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListRatingEmpty}" rendered="#{ratingController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{ratingController.items.rowCount > 0}">
+                    <h:outputText value="#{ratingController.pagination.pageFirstItem + 1}..#{ratingController.pagination.pageLastItem + 1}/#{ratingController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{ratingController.previous}" value="#{bundle.Previous} #{ratingController.pagination.pageSize}" rendered="#{ratingController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{ratingController.next}" value="#{bundle.Next} #{ratingController.pagination.pageSize}" rendered="#{ratingController.pagination.hasNextPage}"/>&nbsp;
+                    <b:dataTable value="#{ratingController.items}" var="item" border="0"  style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListRatingTitle_id}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListRatingTitle_title}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.title}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListRatingTitle_feedback}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.feedback}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListRatingTitle_productRating}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.productRating}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListRatingTitle_customerId}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.customerId}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListRatingTitle_productId}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.productId}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{ratingController.prepareView}" value="#{bundle.ListRatingViewLink}"/>
+                            
+                        </h:column>
+                    </b:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{ratingController.prepareCreate}" value="#{bundle.ListRatingCreateLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ListRatingIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
